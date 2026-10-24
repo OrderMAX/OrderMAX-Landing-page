@@ -1,8 +1,8 @@
-# OrderMAX Landing Page — Project Context
+# NUO AI Landing Page — Project Context
 
 ## 1. What This Project Is
 
-A static, single-file marketing website and supporting privacy-policy page for **OrderMAX** — a free Shopify cart upsell and cross-sell app. The site's sole job is to convert cold paid-traffic visitors into app installs, with a secondary goal of booking 15-minute founder calls.
+A static, single-file marketing website and supporting privacy-policy page for **NUO AI** — a free Shopify cart upsell and cross-sell app. The site's sole job is to convert cold paid-traffic visitors into app installs, with a secondary goal of booking 15-minute founder calls.
 
 There is no build system, no bundler, no Node dependencies, and no framework. Everything ships as vanilla HTML, inline CSS, and vanilla JavaScript.
 
@@ -12,7 +12,7 @@ There is no build system, no bundler, no Node dependencies, and no framework. Ev
 
 | Field | Detail |
 |---|---|
-| **Product** | OrderMAX — Shopify cart upsell & cross-sell app |
+| **Product** | NUO AI — Shopify cart upsell & cross-sell app |
 | **Shopify listing** | https://apps.shopify.com/ordermax-1 |
 | **Live demo store** | https://morae-labs.myshopify.com (password-bypassed URL in the floating button) |
 | **Pricing** | Free — every feature included |
@@ -24,7 +24,7 @@ There is no build system, no bundler, no Node dependencies, and no framework. Ev
 
 ### Core value proposition
 
-Shopify merchants running paid advertising pay per click. If each order only contains one item, the acquisition cost can wipe out margin. OrderMAX solves this with:
+Shopify merchants running paid advertising pay per click. If each order only contains one item, the acquisition cost can wipe out margin. NUO AI solves this with:
 
 1. **Adaptive storefront widgets** — cart upsells, cross-sells, and free-gift offers that automatically inherit the store theme's typography, spacing, and button styles; a visual design editor is available for full control.
 2. **Real-time funnel analytics** — tracks every funnel step (offer viewed → offer accepted → checkout started → order placed), revenue influenced, discount cost, and drop-off points.
@@ -37,7 +37,7 @@ Shopify merchants running paid advertising pay per click. If each order only con
 ## 3. File Structure
 
 ```
-OrderMAX-landing-page/
+NUO AI-landing-page/
 ├── index.html              # Main landing page (703 lines, ~54 KB, all-in-one)
 ├── privacy-policy/
 │   └── index.html          # Privacy policy page (261 lines, ~21 KB)
@@ -55,7 +55,7 @@ No `package.json`, no `node_modules`, no CSS files, no JS files — everything i
 
 ### 4.1 Head / Meta
 
-- **Title:** `OrderMAX — Shopify Upsell & Cross-Sell App | Make Paid Traffic Profitable`
+- **Title:** `NUO AI — Shopify Upsell & Cross-Sell App | Make Paid Traffic Profitable`
 - **Meta description:** focuses on the free-to-install angle, adaptive widgets, real-time analytics, A/B testing.
 - **Canonical URL:** `https://apps.shopify.com/ordermax-1` (points to the Shopify listing, not the domain)
 - **OG image:** `https://ordermax.io/images/social-preview.png`
@@ -73,18 +73,18 @@ Loaded via Fontshare CDN (no local files):
 
 | Token | Value | Role |
 |---|---|---|
-| Background | `#F6F3EC` | Warm off-white page base |
-| Dark text | `#17140D` | Near-black |
-| Muted text | `#57503E` | Body copy |
-| Subtle text | `#8B8471` | Meta, hints |
-| Accent purple | `#4F3DF5` | Primary CTA, links, bars |
-| Accent purple dark | `#3D2CE0` | Hover state |
+| Background | `#F4F2FF` | Warm off-white page base |
+| Dark text | `#140E2B` | Near-black |
+| Muted text | `#534B73` | Body copy |
+| Subtle text | `#8A83B4` | Meta, hints |
+| Accent purple | `#5B3DF5` | Primary CTA, links, bars |
+| Accent purple dark | `#4A2DE8` | Hover state |
 | Accent purple light | `#DCD6FB` | Backgrounds, borders |
 | Success green | `#2BA05A` / `#7CE3A4` | Live indicators, added state |
 | Warning red | `#D14D3F` | Pain-point bullets |
 | White card | `#fff` | Card surfaces |
-| Off-white card | `#FBFAF6` | Subtle card variant |
-| Dark footer | `#17140D` | Footer + ROI calculator bg |
+| Off-white card | `#FAF9FF` | Subtle card variant |
+| Dark footer | `#140E2B` | Footer + ROI calculator bg |
 
 ### 4.4 Page Sections (in order)
 
@@ -149,7 +149,7 @@ Four cards in a 2-column grid, each with a number badge, heading, body, and chip
 |---|---|---|
 | 01 | Adaptive storefront widgets | Lavender `#F0EDFD` |
 | 02 | Real-time funnel analytics | Mint `#E4F0E6` |
-| 03 | Automated A/B testing | Peach `#FAEBDD` |
+| 03 | Automated A/B testing | Peach `#FFF4D6` |
 | 04 | Sidekick control + AI guidance | Sky `#E2EDF8` |
 
 Each card has a `[data-glow]` radial-gradient cursor-follow sheen effect.
@@ -173,7 +173,7 @@ Three numbered cards (3-column grid, collapses to 1 on mobile):
 #### Testimonial + Pricing
 
 **Review (5 stars):**
-"OrderMAX has been a great Shopify upsell and cross-sell app for our store. The widgets adapted perfectly to our theme and felt completely native. After optimizing our campaigns, we achieved a 21% AOV lift and improved ROAS. The founder was also very responsive and personally helped us maximize results."
+"NUO AI has been a great Shopify upsell and cross-sell app for our store. The widgets adapted perfectly to our theme and felt completely native. After optimizing our campaigns, we achieved a 21% AOV lift and improved ROAS. The founder was also very responsive and personally helped us maximize results."
 — M/S Spice Kingdom, India · 2 months using the app
 
 **Pricing card:**
@@ -183,12 +183,12 @@ Three numbered cards (3-column grid, collapses to 1 on mobile):
 #### FAQ
 
 6 items (accordion, one open at a time):
-1. Is OrderMAX really free?
-2. How does OrderMAX help stores running paid ads?
+1. Is NUO AI really free?
+2. How does NUO AI help stores running paid ads?
 3. Will the upsell widgets match my store's theme?
 4. Do I need a developer to set it up?
 5. How does the automated A/B testing work?
-6. Does OrderMAX work on mobile?
+6. Does NUO AI work on mobile?
 
 #### Floating Demo Button
 
@@ -215,7 +215,7 @@ Standalone page sharing the same design system (fonts, colours, nav, footer) but
 10. Security (HTTPS, minimal data collection)
 11. Privacy rights (GDPR access/correction/deletion/portability; CCPA; GPC honoured)
 12. Children's privacy (not directed at under-16)
-13. The OrderMAX Shopify app (app acts as processor, merchant is controller; data deleted on uninstall via Shopify data-deletion webhooks)
+13. The NUO AI Shopify app (app acts as processor, merchant is controller; data deleted on uninstall via Shopify data-deletion webhooks)
 14. Policy changes
 15. Contact (`privacy@ordermax.app`, Manhattan NY)
 
