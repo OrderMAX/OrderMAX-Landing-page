@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiered Rewards & Tiered Discounts for Shopify | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Free Shopify app for tiered rewards — spend-threshold discount and gift ladders (spend $50 save 10%, $100 save 15%). Live progress bar in cart, full funnel analytics.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/offers/tiered-rewards/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Tiered rewards for Shopify: spend more, unlock more.">
+<meta property="og:description" content="Build a spend-threshold reward ladder in your Shopify cart — tiered discounts, tiered gifts, free shipping tiers. Free to install.">
+<meta property="og:url" content="https://ordermax.io/offers/tiered-rewards/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tiered rewards for Shopify: spend more, unlock more.">
+<meta name="twitter:description" content="Build a spend-threshold reward ladder in your Shopify cart — tiered discounts, tiered gifts, free shipping tiers. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/offers/tiered-rewards/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Offers & promotions", "item": "https://ordermax.io/offers/"}, {"@type": "ListItem", "position": 3, "name": "Tiered rewards", "item": "https://ordermax.io/offers/tiered-rewards/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are tiered rewards?", "acceptedAnswer": {"@type": "Answer", "text": "Tiered rewards are a ladder of incentives tied to how much a shopper spends or how many units they buy. Each threshold unlocks a better reward — for example 10% off at $50, 15% off at $100, free shipping at $150 — so there is always a reason to add one more item before checkout."}}, {"@type": "Question", "name": "How do I set up a tiered discount on Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "In NUO AI you create a campaign, add two or three spend or quantity thresholds, and attach a reward to each one — a percentage off, a fixed amount off, free shipping, or a free product. The cart widget then shows the shopper the next threshold and the amount remaining, with no theme edits or code."}}, {"@type": "Question", "name": "What is the difference between tiered discounts and tiered pricing?", "acceptedAnswer": {"@type": "Answer", "text": "A tiered discount triggers on cart total, so a mixed cart of different products can qualify. Tiered pricing (also called volume pricing or quantity breaks) triggers on the number of units of one product or variant, which suits consumables and multipacks. NUO AI supports both trigger types."}}, {"@type": "Question", "name": "Where should my first tier start?", "acceptedAnswer": {"@type": "Answer", "text": "Roughly 15–30% above your current average order value. If the first threshold sits below AOV, most carts qualify without changing behaviour and you are discounting orders that needed no incentive. Each subsequent rung should be reachable by adding one more typical item."}}, {"@type": "Question", "name": "Does NUO AI run loyalty program tiers?", "acceptedAnswer": {"@type": "Answer", "text": "No. NUO AI runs cart-based tiers — thresholds evaluated against the order in front of the shopper. Points-based VIP loyalty tiers that accumulate over a customer's lifetime are a separate category of tool, and NUO AI does not claim to replace one."}}, {"@type": "Question", "name": "Can I see which tier makes money?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Funnel analytics report how many carts reached each threshold, the acceptance rate, and the discount cost of each rung against the order values that claimed it — so an unprofitable rung is visible rather than assumed."}}, {"@type": "Question", "name": "Is tiered rewards free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. NUO AI is free, with every feature included — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_tiered_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/offers/" style="color:#534B73">Offers & promotions</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Tiered rewards</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Tiered rewards for Shopify: spend more, unlock more.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      A tiered reward is a ladder of incentives attached to cart value: spend $50 and save 10%, spend $100 and save 15%, spend $150 and the shipping is free. Each rung gives the shopper a reason to add one more item. NUO AI builds the ladder, shows live progress in the cart, and reports which rung actually pays — free.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_tiered_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/blog/tiered-discounts-examples-shopify/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See tiered discount examples</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How to build a tiered discount ladder</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Set your rungs.</strong> Two or three spend thresholds. Base them on your current AOV — the first rung should sit just above it, not far beyond it.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Attach a reward per rung.</strong> A percentage off, a fixed amount off, free shipping, or a free gift. Rungs can mix reward types.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Show the progress.</strong> The cart widget displays the next threshold and the gap to it — "add $14 to save 15%" — styled to your theme, no code.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Read the ladder.</strong> Funnel analytics show how many carts reached each rung and the discount cost of each, so you can see which rung grew order value and which just gave margin away.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Tiered discounts vs. tiered pricing vs. volume breaks</h2>
+    <p>These three terms get used interchangeably and mean different things, which matters when you are deciding what to build.</p>
+    <table>
+      <tr><th>Mechanic</th><th>What triggers it</th><th>Typical use</th></tr>
+      <tr><td><strong>Tiered discount</strong></td><td>Cart total crosses a spend threshold</td><td>Raise average order value across a mixed cart</td></tr>
+      <tr><td><strong>Tiered / volume pricing</strong></td><td>Quantity of one product or variant</td><td>Consumables and multipacks — buy 3 save 10%, buy 6 save 20%</td></tr>
+      <tr><td><strong>Tiered gift</strong></td><td>Spend threshold, reward is a product</td><td>AOV growth without discounting the core product</td></tr>
+      <tr><td><strong>Loyalty tiers</strong></td><td>Lifetime points or spend, per customer</td><td>Long-term retention — a different category of tool</td></tr>
+    </table>
+    <p>NUO AI covers the first three: thresholds on cart value and quantity, with discounts, gifts, or shipping as the reward. It does not run points-based VIP loyalty programmes — those track a customer across their lifetime rather than evaluating the cart in front of them. If you are weighing one against the other, <a href="/blog/tiered-discount-vs-loyalty-program/">tiered discounts vs. a loyalty program</a> lays out which problem each one solves.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Setting thresholds that do not cost you money</h2>
+    <p>The common mistake is putting the first rung below current AOV. If your average order is $68 and the ladder starts at $50, most carts qualify for a discount they were going to reach anyway — you have funded a markdown on orders that needed no incentive. Start the first rung roughly 15–30% above AOV so the discount buys genuine incremental spend.</p>
+    <p>The second rung should be reachable in one more product, not two. If the gap between rungs is larger than your typical item price, the upper rung is decorative. Price the ladder against the catalog, not against round numbers.</p>
+    <p>Finally, watch the blended discount, not the headline rate. A 15% rung on a $100 cart with a $32 incremental item added is cheaper than a 10% rung that triggers on carts that would have been $92 regardless. Funnel analytics in NUO AI report discount cost per rung next to the order values that claimed it, which is the comparison that answers this.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Progress bars and why they matter</h2>
+    <p>A threshold the shopper cannot see does not change behaviour. The working pattern is a visible gap — the amount remaining to the next reward, updated as the cart changes. It converts an abstract promotion into a concrete, small task, which is exactly the framing that makes a shopper add one more item rather than check out.</p>
+    <p>Keep the message to one next rung at a time. Showing every tier at once invites comparison shopping against your own ladder and makes the top tier feel like the only real offer.</p>
+    <p>Related mechanics: <a href="/offers/gift-with-purchase/">gift with purchase</a> for a single-threshold free gift, <a href="/offers/pick-your-gift/">pick your gift</a> to let shoppers choose the reward, and <a href="/offers/discount-stacking/">discount stacking</a> if a tier needs to coexist with a promo code.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>What are tiered rewards?</summary><p>Tiered rewards are a ladder of incentives tied to how much a shopper spends or how many units they buy. Each threshold unlocks a better reward — for example 10% off at $50, 15% off at $100, free shipping at $150 — so there is always a reason to add one more item before checkout.</p></details>
+      <details class="om-faq"><summary>How do I set up a tiered discount on Shopify?</summary><p>In NUO AI you create a campaign, add two or three spend or quantity thresholds, and attach a reward to each one — a percentage off, a fixed amount off, free shipping, or a free product. The cart widget then shows the shopper the next threshold and the amount remaining, with no theme edits or code.</p></details>
+      <details class="om-faq"><summary>What is the difference between tiered discounts and tiered pricing?</summary><p>A tiered discount triggers on cart total, so a mixed cart of different products can qualify. Tiered pricing (also called volume pricing or quantity breaks) triggers on the number of units of one product or variant, which suits consumables and multipacks. NUO AI supports both trigger types.</p></details>
+      <details class="om-faq"><summary>Where should my first tier start?</summary><p>Roughly 15–30% above your current average order value. If the first threshold sits below AOV, most carts qualify without changing behaviour and you are discounting orders that needed no incentive. Each subsequent rung should be reachable by adding one more typical item.</p></details>
+      <details class="om-faq"><summary>Does NUO AI run loyalty program tiers?</summary><p>No. NUO AI runs cart-based tiers — thresholds evaluated against the order in front of the shopper. Points-based VIP loyalty tiers that accumulate over a customer's lifetime are a separate category of tool, and NUO AI does not claim to replace one.</p></details>
+      <details class="om-faq"><summary>Can I see which tier makes money?</summary><p>Yes. Funnel analytics report how many carts reached each threshold, the acceptance rate, and the discount cost of each rung against the order values that claimed it — so an unprofitable rung is visible rather than assumed.</p></details>
+      <details class="om-faq"><summary>Is tiered rewards free?</summary><p>Yes. NUO AI is free, with every feature included — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Build your reward ladder free.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_tiered_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_tiered_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

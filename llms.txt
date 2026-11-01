@@ -19,11 +19,26 @@
 - [Free vs paid upsell apps for Shopify](https://ordermax.io/blog/free-vs-paid-upsell-apps-shopify/): the economics of choosing a free vs. a paid upsell app — net-gain math, what a fee typically buys (volume headroom, deeper targeting, support), tiered evidence (McKinsey cross-sell attribution, AfterSell AOV-lift data), FAQ
 - [What is a Shopify upsell app?](https://ordermax.io/blog/what-is-a-shopify-upsell-app/): vendor-neutral category definition — upsell vs. cross-sell vs. order bump, the four placements offers run in (product page, cart, checkout, thank-you page), objection handling, tiered evidence, FAQ
 - [Compare Shopify upsell apps](https://ordermax.io/compare/): hub for 20 head-to-head comparison pages — NUO AI vs. 7 competitors (Selleasy, Essential, BOGOS, iCart, Upsell.com, Honeycomb, Wiser AI), plus 13 competitor-vs-competitor pages; pricing read from each vendor's own App Store listing
-- [Offers & promotions hub](https://ordermax.io/offers/): overview of all offer types
+- [Shopify offers & upsell guides (blog hub)](https://ordermax.io/blog/): index of all guides, grouped by offer cluster
+- [Offers & promotions hub](https://ordermax.io/offers/): overview of all eight offer types
 - [Gift with purchase (GWP)](https://ordermax.io/offers/gift-with-purchase/): what GWP is, how to set it up, FAQ
 - [BOGO & Buy X Get Y](https://ordermax.io/offers/bogo-buy-x-get-y/): what BOGO/BXGY is, how to set it up, FAQ
 - [AI cart upsell](https://ordermax.io/offers/ai-cart-upsell/): how AI product recommendations work, FAQ
 - [Discount stacking](https://ordermax.io/offers/discount-stacking/): what discount stacking is, margin risk, how to control it, FAQ
+- [Pick your gift](https://ordermax.io/offers/pick-your-gift/): shopper-chosen free gift from an approved set, how it differs from fixed GWP, FAQ
+- [Tiered rewards](https://ordermax.io/offers/tiered-rewards/): spend- and quantity-threshold reward ladders (tiered discounts, tiered pricing, gift tiers, shipping tiers); explicitly not a points-based loyalty program
+- [Frequently bought together](https://ordermax.io/offers/frequently-bought-together/): one-click companion bundles on the product page and cart, placement guidance, FAQ
+- [Product add-ons](https://ordermax.io/offers/product-add-ons/): priced optional extras (gift wrap, warranty, engraving, spares) without variant bloat, FAQ
+- [How to set up gift with purchase on Shopify](https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/): native Buy X Get Y route vs. an app-based cart offer, with the native limitation that Shopify will not auto-add the gift
+- [17 free gift with purchase ideas](https://ordermax.io/blog/free-gift-with-purchase-ideas-shopify/): gift ideas by product category plus threshold maths and margin guardrails
+- [How to do BOGO on Shopify](https://ordermax.io/blog/how-to-do-bogo-on-shopify/): native setup steps, the auto-add limitation, BOGO structures ranked by effective discount
+- [9 Buy X Get Y examples](https://ordermax.io/blog/buy-x-get-y-examples-shopify/): nine BXGY structures by cost, and why auto add to cart determines conversion
+- [12 tiered discount examples](https://ordermax.io/blog/tiered-discounts-examples-shopify/): spend ladders, quantity breaks, non-discount ladders, and how to price each rung against AOV
+- [Tiered discounts vs. tiered loyalty programs](https://ordermax.io/blog/tiered-discount-vs-loyalty-program/): comparison of cart-based tiers and points-based loyalty tiers, including which to build first
+- [Frequently bought together examples](https://ordermax.io/blog/frequently-bought-together-examples-shopify/): pairings by category, the complement-not-substitute rule, discounting and measurement
+- [Product add-ons vs. custom product options](https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/): variant vs. custom option vs. add-on decision table and the variant-bloat consequences
+- [Shopify add-ons at checkout](https://ordermax.io/blog/add-ons-at-checkout-shopify/): the four surfaces for paid extras (product page, cart, checkout, post-purchase) and what each allows
+- [How to stack discounts on Shopify](https://ordermax.io/blog/stack-discounts-shopify/): how Shopify discount combinations work, where stacking costs margin, and a stacking policy
 - [Privacy policy](https://ordermax.io/privacy-policy)
 
 ## Contact

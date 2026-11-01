@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Add-Ons vs. Custom Product Options on Shopify | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="When to model an extra as a Shopify variant, a custom option, or a priced add-on — with the variant-bloat maths and a decision table for each case.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Product add-ons vs. custom product options on Shopify">
+<meta property="og:description" content="Variant, custom option, or add-on? A decision table, plus the variant-bloat maths.">
+<meta property="og:url" content="https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Product add-ons vs. custom product options on Shopify">
+<meta name="twitter:description" content="Variant, custom option, or add-on? A decision table, plus the variant-bloat maths.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/#article", "headline": "Product add-ons vs. custom product options on Shopify", "description": "When to model an extra as a Shopify variant, a custom option, or a priced add-on — with the variant-bloat maths and a decision table for each case.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/"}, "author": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/"}, "publisher": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/", "logo": {"@type": "ImageObject", "url": "https://ordermax.io/images/logo.png"}}}, {"@type": "BreadcrumbList", "@id": "https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ordermax.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Add-ons vs. custom options", "item": "https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the difference between a product add-on and a variant on Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "A variant is a distinct sellable unit of the product with its own SKU, price and inventory — size and colour are variants. An add-on is an optional priced extra that attaches to whichever variant the shopper chose, such as gift wrap or a warranty. Add-ons do not describe the product, so modelling them as variants multiplies your variant matrix for no benefit."}}, {"@type": "Question", "name": "Can I add custom product options without an app?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, by adding line-item property fields in your theme's product form, which passes the shopper's input through to the order. It works for simple text capture, but it requires theme edits and gives you no pricing, conditional logic, or reporting — which is why most stores use an app once options need prices attached."}}, {"@type": "Question", "name": "Do add-ons need their own products in my catalog?", "acceptedAnswer": {"@type": "Answer", "text": "They can be backed by real products when you need stock tracking — a physical gift box, for example — or run as priced extras that are not browsable in your catalog. Use a real product when something leaves your warehouse and gets counted."}}, {"@type": "Question", "name": "How many add-ons should I show on a product page?", "acceptedAnswer": {"@type": "Answer", "text": "One prompt, two at most. Every additional choice placed between the shopper and the buy button costs conversion, and the add-on revenue rarely covers that cost past the second option."}}, {"@type": "Question", "name": "Will add-ons mess up my inventory?", "acceptedAnswer": {"@type": "Answer", "text": "Not if they are modelled as add-ons rather than variants. Encoding extras as product options is what splits one physical item into several stock rows; attaching them as their own priced lines keeps inventory counting the product and nothing else."}}, {"@type": "Question", "name": "Are product add-ons free in NUO AI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0, with no paid tier, order cap, or revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_addonsvsopts_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/blog/" style="color:#534B73">Blog</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Comparison</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Product add-ons vs. custom product options on Shopify</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Three different things get called the same thing on Shopify: a variant, a custom option, and an add-on. Choosing the wrong one does not break the store immediately — it breaks inventory, filtering and reporting six months later. Here is how to pick correctly the first time.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_addonsvsopts_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">See it live in the demo store</a>
+      <a href="/offers/product-add-ons/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">Product add-ons in NUO AI</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The three models</h2>
+    <p><strong>Variants</strong> are Shopify's native way to express genuinely different sellable units of a product. Each variant has its own SKU, price and inventory. Size and colour are variants.</p>
+    <p><strong>Custom options</strong> capture shopper input that does not change what you ship from stock — a name for engraving, a gift message, a chosen delivery date. Historically stores built these with line-item properties in theme code; now they are commonly handled by an options app.</p>
+    <p><strong>Add-ons</strong> are optional extras with their own price that attach to the order — gift wrap, a warranty, express assembly, a spare filter. They are not standalone purchases and they do not describe the product.</p>
+    <table>
+      <tr><th>Model</th><th>Has its own SKU &amp; stock</th><th>Changes price</th><th>Example</th></tr>
+      <tr><td>Variant</td><td>Yes</td><td>Can</td><td>Blue / Large</td></tr>
+      <tr><td>Custom option</td><td>No</td><td>Usually not</td><td>Engraving text, gift message</td></tr>
+      <tr><td>Add-on</td><td>Optional</td><td>Yes</td><td>Gift wrap $4, warranty $49</td></tr>
+    </table>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Why encoding add-ons as variants goes wrong</h2>
+    <p>Variants multiply. Shopify allows a limited number of options and a capped number of variant combinations per product, and every extra you add as an option combines with everything else. Three colours and four sizes is 12 variants; add a two-choice gift wrap option and it is 24, half of which exist only to carry a $4 upcharge.</p>
+    <p>The count is the least of it:</p>
+    <ul>
+      <li><strong>Inventory becomes fiction.</strong> You now track stock on "Blue / Large / With wrap" separately from "Blue / Large / No wrap" — two rows for one physical item.</li>
+      <li><strong>Collection filters degrade.</strong> Shoppers get filter facets for your packaging choices.</li>
+      <li><strong>Reporting splits.</strong> Best-seller reports fragment one product across several variant rows.</li>
+      <li><strong>The product page gets worse.</strong> Another selector sits between the shopper and the buy button, and changing it can reset their size choice.</li>
+      <li><strong>Feeds and integrations inherit the mess.</strong> Every variant flows into your product feeds, ERP and ad catalogs.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The decision, case by case</h2>
+    <table>
+      <tr><th>If the extra…</th><th>Use</th></tr>
+      <tr><td>has its own stock you count, and the shopper must choose one</td><td>Variant</td></tr>
+      <tr><td>is free text or a date you pass to fulfilment</td><td>Custom option</td></tr>
+      <tr><td>costs extra and is optional</td><td>Add-on</td></tr>
+      <tr><td>is a complete product that pairs with this one</td><td><a href="/offers/frequently-bought-together/">Frequently bought together</a> bundle</td></tr>
+      <tr><td>is free once a spend threshold is met</td><td><a href="/offers/gift-with-purchase/">Gift with purchase</a></td></tr>
+      <tr><td>is a more expensive version of the same product</td><td>Variant, plus an upsell prompt</td></tr>
+    </table>
+    <p>Two practical notes. First, charge for add-ons as their own line rather than bundling the cost into the product — a visible $4 gift wrap converts better than a product that silently costs $4 more. Second, keep it to one add-on prompt per product, two at most; an add-on menu is a decision tax paid on the way to checkout.</p>
+    <p>If you want extras offered after the cart, read <a href="/blog/add-ons-at-checkout-shopify/">add-ons at checkout on Shopify</a> for what each surface actually allows.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>What is the difference between a product add-on and a variant on Shopify?</summary><p>A variant is a distinct sellable unit of the product with its own SKU, price and inventory — size and colour are variants. An add-on is an optional priced extra that attaches to whichever variant the shopper chose, such as gift wrap or a warranty. Add-ons do not describe the product, so modelling them as variants multiplies your variant matrix for no benefit.</p></details>
+      <details class="om-faq"><summary>Can I add custom product options without an app?</summary><p>Yes, by adding line-item property fields in your theme's product form, which passes the shopper's input through to the order. It works for simple text capture, but it requires theme edits and gives you no pricing, conditional logic, or reporting — which is why most stores use an app once options need prices attached.</p></details>
+      <details class="om-faq"><summary>Do add-ons need their own products in my catalog?</summary><p>They can be backed by real products when you need stock tracking — a physical gift box, for example — or run as priced extras that are not browsable in your catalog. Use a real product when something leaves your warehouse and gets counted.</p></details>
+      <details class="om-faq"><summary>How many add-ons should I show on a product page?</summary><p>One prompt, two at most. Every additional choice placed between the shopper and the buy button costs conversion, and the add-on revenue rarely covers that cost past the second option.</p></details>
+      <details class="om-faq"><summary>Will add-ons mess up my inventory?</summary><p>Not if they are modelled as add-ons rather than variants. Encoding extras as product options is what splits one physical item into several stock rows; attaching them as their own priced lines keeps inventory counting the product and nothing else.</p></details>
+      <details class="om-faq"><summary>Are product add-ons free in NUO AI?</summary><p>Yes. Every NUO AI feature is included at $0, with no paid tier, order cap, or revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">See priced add-ons on a real product page.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_addonsvsopts_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Open the live demo store</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="demo_addonsvsopts_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">Add app on Shopify — Free</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

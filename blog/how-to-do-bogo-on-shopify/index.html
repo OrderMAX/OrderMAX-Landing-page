@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Do BOGO on Shopify (Buy One Get One, Step by Step) | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Set up a BOGO offer on Shopify — native Buy X Get Y discount steps, the auto-add limitation, half-price alternatives, and the margin maths before you launch.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/blog/how-to-do-bogo-on-shopify/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="How to do BOGO on Shopify">
+<meta property="og:description" content="Native setup steps for buy one get one, the limitation nobody mentions, and the margin maths first.">
+<meta property="og:url" content="https://ordermax.io/blog/how-to-do-bogo-on-shopify/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to do BOGO on Shopify">
+<meta name="twitter:description" content="Native setup steps for buy one get one, the limitation nobody mentions, and the margin maths first.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://ordermax.io/blog/how-to-do-bogo-on-shopify/#article", "headline": "How to do BOGO on Shopify", "description": "Set up a BOGO offer on Shopify — native Buy X Get Y discount steps, the auto-add limitation, half-price alternatives, and the margin maths before you launch.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ordermax.io/blog/how-to-do-bogo-on-shopify/"}, "author": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/"}, "publisher": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/", "logo": {"@type": "ImageObject", "url": "https://ordermax.io/images/logo.png"}}}, {"@type": "BreadcrumbList", "@id": "https://ordermax.io/blog/how-to-do-bogo-on-shopify/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ordermax.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to do BOGO on Shopify", "item": "https://ordermax.io/blog/how-to-do-bogo-on-shopify/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I set up buy one get one free on Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "Create a discount of type Buy X get Y: set the customer-buys side to quantity 1 of the product or collection, set the customer-gets side to quantity 1 at free, choose automatic or a code, and cap the uses per order. The offer then applies when both units are in the cart."}}, {"@type": "Question", "name": "Does Shopify add the free BOGO item to the cart automatically?", "acceptedAnswer": {"@type": "Answer", "text": "No. The native discount applies to the second unit only once it is already in the cart. Auto-adding the qualifying item — and telling the shopper in the cart that their second one is free — requires an app that can modify the cart."}}, {"@type": "Question", "name": "Is BOGO the same as 50% off?", "acceptedAnswer": {"@type": "Answer", "text": "Mathematically, buy one get one free is a 50% discount across two units. Behaviourally it performs differently: shoppers respond more strongly to getting something free than to an equivalent percentage off, and the offer forces a two-unit purchase, which raises order value."}}, {"@type": "Question", "name": "Can I run BOGO on a whole collection?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Set the buys and gets sides to a collection rather than a single product. With mixed prices in the collection, check whether the discount applies to the cheapest qualifying item and whether that is the behaviour you want before you launch."}}, {"@type": "Question", "name": "Will BOGO stack with my discount codes?", "acceptedAnswer": {"@type": "Answer", "text": "Only if your discount combinations allow it. Shopify lets you control whether a discount can combine with other product, order, or shipping discounts — review those settings before launch, and see our guide to stacking discounts on Shopify for the full picture."}}, {"@type": "Question", "name": "Is BOGO profitable?", "acceptedAnswer": {"@type": "Answer", "text": "Only above roughly 50–60% gross margin on the product, unless the goal is clearing stock or acquiring customers at a known loss. Below that, buy one get one 50% off or buy 2 get 1 free are the safer structures."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_bogohow_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/blog/" style="color:#534B73">Blog</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">How-to</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">How to do BOGO on Shopify</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      BOGO is a 50% discount wearing a better outfit. Shoppers respond to it far more strongly than to "50% off two", which is why it is worth running — and why it is worth doing the margin arithmetic before you do the setup. Both are below.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_bogohow_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">See it live in the demo store</a>
+      <a href="/offers/bogo-buy-x-get-y/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">BOGO in NUO AI</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Setting up BOGO with Shopify's native discount</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Open Discounts and choose Buy X get Y.</strong> This is the rule type behind every BOGO variant on Shopify.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Set the "customer buys" side.</strong> Quantity 1 of a product, variant, or a whole collection. Collections are usually the right scope for a seasonal BOGO.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Set the "customer gets" side.</strong> Quantity 1, discount value free (true BOGO) or a percentage (buy one get one 50% off).</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Decide automatic or code.</strong> Automatic applies with no action from the shopper and generally converts better; a code is better for email and influencer campaigns you want to attribute.</p></div>
+      <div class="om-step"><span>5</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Cap the usage.</strong> Set maximum uses per order so a cart of ten items does not become five free ones unless you intend that.</p></div>
+      <div class="om-step"><span>6</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Check discount combinations.</strong> Decide whether BOGO can combine with your order-level or shipping discounts. Leaving this unset is how stores accidentally stack their way to zero margin.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The limitation you will hit immediately</h2>
+    <p>Shopify's native rule discounts the second item once it is in the cart. It does not add the second item. So the shopper has to understand the offer, navigate back, and add another unit — and if they add a different variant than the rule expects, nothing happens and they conclude your promotion is broken.</p>
+    <p>That gap is why BOGO conversion is usually a cart-UI problem rather than a discount-configuration problem. An app that auto-adds the qualifying item and says plainly "your second one is free" removes the entire failure path. See <a href="/blog/buy-x-get-y-examples-shopify/">Buy X Get Y examples, including auto-add to cart</a> for how that behaves in practice.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The margin maths, before you launch</h2>
+    <p>True BOGO on a single product is a 50% discount on two units. If your gross margin is below 50%, you are selling at a loss on every claimed offer — no volume fixes that.</p>
+    <table>
+      <tr><th>Structure</th><th>Effective discount on the bundle</th><th>Use when</th></tr>
+      <tr><td>Buy 1 get 1 free</td><td>50%</td><td>Margin above ~60%, or clearing dated stock</td></tr>
+      <tr><td>Buy 1 get 1 at 50% off</td><td>25%</td><td>The common safe default</td></tr>
+      <tr><td>Buy 2 get 1 free</td><td>33%</td><td>Consumables with repeat use</td></tr>
+      <tr><td>Buy 1 get a cheaper item free</td><td>Cost of item 2 only</td><td>Protecting the hero product's price</td></tr>
+      <tr><td>Spend threshold + free gift</td><td>Gift cost only</td><td>AOV growth without discounting — see <a href="/offers/gift-with-purchase/">GWP</a></td></tr>
+    </table>
+    <p>Two further guardrails. Exclude already-discounted items, or BOGO lands on top of a markdown. And watch for stock-up behaviour on consumables: a successful BOGO can pull forward three months of demand from your best customers, which looks like a great week and a flat quarter.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>What to measure</h2>
+    <p>Claim count alone proves nothing — it only tells you shoppers like free things. The readable numbers are units per order against your baseline, blended margin on orders that claimed the offer, and whether new-customer orders rose or existing customers simply bought cheaper. NUO AI reports offer views, acceptance rate and discount cost per campaign, so the comparison against your non-offer baseline is a report rather than a spreadsheet exercise.</p>
+    <p>If the margin maths rules out BOGO on your catalog, the usual substitutes are a <a href="/offers/tiered-rewards/">tiered reward ladder</a> or a <a href="/offers/frequently-bought-together/">frequently bought together</a> bundle at full price.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>How do I set up buy one get one free on Shopify?</summary><p>Create a discount of type Buy X get Y: set the customer-buys side to quantity 1 of the product or collection, set the customer-gets side to quantity 1 at free, choose automatic or a code, and cap the uses per order. The offer then applies when both units are in the cart.</p></details>
+      <details class="om-faq"><summary>Does Shopify add the free BOGO item to the cart automatically?</summary><p>No. The native discount applies to the second unit only once it is already in the cart. Auto-adding the qualifying item — and telling the shopper in the cart that their second one is free — requires an app that can modify the cart.</p></details>
+      <details class="om-faq"><summary>Is BOGO the same as 50% off?</summary><p>Mathematically, buy one get one free is a 50% discount across two units. Behaviourally it performs differently: shoppers respond more strongly to getting something free than to an equivalent percentage off, and the offer forces a two-unit purchase, which raises order value.</p></details>
+      <details class="om-faq"><summary>Can I run BOGO on a whole collection?</summary><p>Yes. Set the buys and gets sides to a collection rather than a single product. With mixed prices in the collection, check whether the discount applies to the cheapest qualifying item and whether that is the behaviour you want before you launch.</p></details>
+      <details class="om-faq"><summary>Will BOGO stack with my discount codes?</summary><p>Only if your discount combinations allow it. Shopify lets you control whether a discount can combine with other product, order, or shipping discounts — review those settings before launch, and see our guide to stacking discounts on Shopify for the full picture.</p></details>
+      <details class="om-faq"><summary>Is BOGO profitable?</summary><p>Only above roughly 50–60% gross margin on the product, unless the goal is clearing stock or acquiring customers at a known loss. Below that, buy one get one 50% off or buy 2 get 1 free are the safer structures.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">See BOGO running in a live cart.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_bogohow_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Open the live demo store</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="demo_bogohow_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">Add app on Shopify — Free</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

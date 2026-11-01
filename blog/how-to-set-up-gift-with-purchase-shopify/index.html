@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Set Up Gift With Purchase on Shopify (Step by Step) | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Two ways to run a Shopify free gift with purchase: the native Buy X Get Y discount and an app-based cart offer. What each one can and cannot do, with setup steps.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="How to set up gift with purchase on Shopify">
+<meta property="og:description" content="The native Buy X Get Y route vs. an app-based cart offer — what each can do, and the exact steps for both.">
+<meta property="og:url" content="https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to set up gift with purchase on Shopify">
+<meta name="twitter:description" content="The native Buy X Get Y route vs. an app-based cart offer — what each can do, and the exact steps for both.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/#article", "headline": "How to set up gift with purchase on Shopify", "description": "Two ways to run a Shopify free gift with purchase: the native Buy X Get Y discount and an app-based cart offer. What each one can and cannot do, with setup steps.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/"}, "author": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/"}, "publisher": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/", "logo": {"@type": "ImageObject", "url": "https://ordermax.io/images/logo.png"}}}, {"@type": "BreadcrumbList", "@id": "https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ordermax.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to set up gift with purchase", "item": "https://ordermax.io/blog/how-to-set-up-gift-with-purchase-shopify/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Shopify add a free gift to the cart automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Not with the native discount engine. Shopify's Buy X Get Y discount can set a product to free, but it only applies once that product is already in the cart — the shopper has to add it themselves. Auto-adding the gift requires an app that can modify the cart."}}, {"@type": "Question", "name": "How do I create a free gift with purchase in Shopify without an app?", "acceptedAnswer": {"@type": "Answer", "text": "Create a Buy X get Y automatic discount, set the \"buys\" side to your minimum spend or qualifying products, set the \"gets\" side to the gift product at free, and limit it to one use per order. Then tell shoppers in a banner and on the product page that they must add the gift to their cart for it to zero out."}}, {"@type": "Question", "name": "Should the gift threshold be based on spend or on a product?", "acceptedAnswer": {"@type": "Answer", "text": "Spend thresholds grow average order value across a mixed cart. Product triggers push a specific item. If the goal is AOV, use spend; if the goal is moving one SKU, use the product trigger."}}, {"@type": "Question", "name": "What happens if the shopper removes items and drops below the threshold?", "acceptedAnswer": {"@type": "Answer", "text": "A well-behaved cart offer removes the gift automatically when the cart no longer qualifies, and tells the shopper why. Check this behaviour before launching — a gift that stays free on an unqualified cart is a margin leak."}}, {"@type": "Question", "name": "Can I limit a free gift to one per customer?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, with usage limits on the native discount or campaign limits in an app. At minimum, cap it at one gift per order so a single cart cannot claim several."}}, {"@type": "Question", "name": "Do I need to change my theme code?", "acceptedAnswer": {"@type": "Answer", "text": "No in either route. The native discount lives entirely in the admin, and NUO AI's cart widget renders without theme edits by inheriting your existing styles."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/#features" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_setupgwp_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/blog/" style="color:#534B73">Blog</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">How-to</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">How to set up gift with purchase on Shopify</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Shopify can give away a free product natively, with one significant limitation: it will not put the gift in the cart for the shopper. Here is how both routes work — the built-in Buy X Get Y discount and an app-based cart offer — and how to choose between them.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_setupgwp_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">See it live in the demo store</a>
+      <a href="/offers/gift-with-purchase/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">GWP in NUO AI</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Route 1 — Shopify's native Buy X Get Y discount</h2>
+    <p>Shopify's discount engine includes a Buy X Get Y rule that can set the Y item to 100% off, which is a free gift in everything but name.</p>
+    <ol style="color:#342C52;font-size:16.5px;line-height:1.75;padding-left:22px">
+      <li>In the Shopify admin, open <strong>Discounts</strong> and create a discount of type <strong>Buy X get Y</strong>.</li>
+      <li>Set the customer-buys condition — a minimum purchase amount, or specific products or collections.</li>
+      <li>Set the customer-gets item to the gift product, quantity 1, at <strong>free</strong>.</li>
+      <li>Choose automatic (applies with no code) or a discount code.</li>
+      <li>Set usage limits — importantly, limit it to one use per order so one cart cannot claim several gifts.</li>
+      <li>Check the combinations settings so the gift behaves correctly alongside your other discounts.</li>
+    </ol>
+    <p><strong>The limitation.</strong> The discount only applies once the gift is already a line item in the cart. Shopify will not add it for the shopper. In practice that means the shopper must find the gift product, add it themselves, and trust that it will zero out at checkout — and most will not do any of that. Stores working around this usually add banners and manual instructions, which is friction in the exact place you cannot afford it.</p>
+    <p>Native is still the right choice if you only need a one-off promotion, you are fine with instructing shoppers manually, and you do not need per-offer reporting.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Route 2 — an app-based cart offer that adds the gift</h2>
+    <p>An app sits in the cart, watches the cart state, and surfaces the gift the moment the shopper qualifies — then adds it at $0 on one click. Setup in NUO AI:</p>
+    <ol style="color:#342C52;font-size:16.5px;line-height:1.75;padding-left:22px">
+      <li>Install the app from the Shopify App Store and open the campaign builder.</li>
+      <li>Choose the trigger: cart total, a specific product, or a collection.</li>
+      <li>Choose the gift product, or several and let the shopper <a href="/offers/pick-your-gift/">pick one</a>.</li>
+      <li>Write the unlock message — for example "add $18 to get a free travel size". Show the gap, not just the threshold.</li>
+      <li>Confirm the widget styling, which inherits your theme's fonts, spacing and button style by default.</li>
+      <li>Publish, then check the funnel report after a day of traffic: views, acceptance rate, discount cost, and the order values that claimed it.</li>
+    </ol>
+    <p>The practical difference is not the setup time. It is that the shopper sees the progress toward the gift while deciding what to add, which is the part that changes cart size.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Choosing between them</h2>
+    <table>
+      <tr><th></th><th>Native Buy X Get Y</th><th>App-based cart offer</th></tr>
+      <tr><td>Gift auto-added to cart</td><td>No — shopper must add it</td><td>Yes, one click at $0</td></tr>
+      <tr><td>Progress toward threshold</td><td>No</td><td>Yes, live in the cart</td></tr>
+      <tr><td>Shopper chooses the gift</td><td>No</td><td>Yes</td></tr>
+      <tr><td>Multiple thresholds / gift ladder</td><td>Separate discounts, no shared UI</td><td>Yes — see <a href="/offers/tiered-rewards/">tiered rewards</a></td></tr>
+      <tr><td>Per-offer analytics</td><td>Discount usage only</td><td>Views, acceptance, discount cost, revenue</td></tr>
+      <tr><td>A/B testing the offer</td><td>No</td><td>Yes</td></tr>
+      <tr><td>Cost</td><td>Included with Shopify</td><td>Free in NUO AI</td></tr>
+    </table>
+    <p>Whichever route you take, decide three things before launching: the threshold relative to your AOV, whether a returned order needs the gift back, and what stock buffer the gift needs. For offer structures that work by category, see <a href="/blog/free-gift-with-purchase-ideas-shopify/">free gift with purchase ideas</a>.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Can Shopify add a free gift to the cart automatically?</summary><p>Not with the native discount engine. Shopify's Buy X Get Y discount can set a product to free, but it only applies once that product is already in the cart — the shopper has to add it themselves. Auto-adding the gift requires an app that can modify the cart.</p></details>
+      <details class="om-faq"><summary>How do I create a free gift with purchase in Shopify without an app?</summary><p>Create a Buy X get Y automatic discount, set the "buys" side to your minimum spend or qualifying products, set the "gets" side to the gift product at free, and limit it to one use per order. Then tell shoppers in a banner and on the product page that they must add the gift to their cart for it to zero out.</p></details>
+      <details class="om-faq"><summary>Should the gift threshold be based on spend or on a product?</summary><p>Spend thresholds grow average order value across a mixed cart. Product triggers push a specific item. If the goal is AOV, use spend; if the goal is moving one SKU, use the product trigger.</p></details>
+      <details class="om-faq"><summary>What happens if the shopper removes items and drops below the threshold?</summary><p>A well-behaved cart offer removes the gift automatically when the cart no longer qualifies, and tells the shopper why. Check this behaviour before launching — a gift that stays free on an unqualified cart is a margin leak.</p></details>
+      <details class="om-faq"><summary>Can I limit a free gift to one per customer?</summary><p>Yes, with usage limits on the native discount or campaign limits in an app. At minimum, cap it at one gift per order so a single cart cannot claim several.</p></details>
+      <details class="om-faq"><summary>Do I need to change my theme code?</summary><p>No in either route. The native discount lives entirely in the admin, and NUO AI's cart widget renders without theme edits by inheriting your existing styles.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Watch a gift unlock in a live cart.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="demo_setupgwp_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Open the live demo store</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="demo_setupgwp_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">Add app on Shopify — Free</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
