@@ -15,10 +15,30 @@
 
 - [Homepage](https://ordermax.io/): product overview, ROI calculator, FAQ
 - [Free upsell app for Shopify](https://ordermax.io/free-upsell-app-shopify/): what "free" means here vs. capped free plans and trials, what is included at $0, evidence on upsell AOV impact, FAQ
+- [NUO AI vs BOGOS](https://ordermax.io/free-upsell-app-shopify/vs-bogos/): free gift bundle upsell, feature and pricing comparison
+- [NUO AI vs Essential](https://ordermax.io/free-upsell-app-shopify/vs-essential/): upsell and cross-sell, feature and pricing comparison
+- [NUO AI vs Honeycomb](https://ordermax.io/free-upsell-app-shopify/vs-honeycomb/): upsell and cross-sell, feature and pricing comparison
+- [NUO AI vs iCart](https://ordermax.io/free-upsell-app-shopify/vs-icart/): cart drawer upsell, feature and pricing comparison
+- [NUO AI vs Selleasy](https://ordermax.io/free-upsell-app-shopify/vs-selleasy/): feature and pricing comparison
+- [NUO AI vs Upsell.com (formerly ReConvert)](https://ordermax.io/free-upsell-app-shopify/vs-upsell-com/): feature and pricing comparison
+- [NUO AI vs Wiser AI](https://ordermax.io/free-upsell-app-shopify/vs-wiser-ai/): upsell and cross-sell, feature and pricing comparison
 - [Best free upsell apps for Shopify, compared](https://ordermax.io/blog/best-free-upsell-apps-shopify/): seven Shopify upsell apps with free plans, compared by what ends the free tier (total store orders, lifetime orders, attributed revenue, funnel views); pricing read from each Shopify App Store listing on 2026-08-26 and quoted verbatim; includes vendor-bias disclosure
 - [Free vs paid upsell apps for Shopify](https://ordermax.io/blog/free-vs-paid-upsell-apps-shopify/): the economics of choosing a free vs. a paid upsell app — net-gain math, what a fee typically buys (volume headroom, deeper targeting, support), tiered evidence (McKinsey cross-sell attribution, AfterSell AOV-lift data), FAQ
 - [What is a Shopify upsell app?](https://ordermax.io/blog/what-is-a-shopify-upsell-app/): vendor-neutral category definition — upsell vs. cross-sell vs. order bump, the four placements offers run in (product page, cart, checkout, thank-you page), objection handling, tiered evidence, FAQ
 - [Compare Shopify upsell apps](https://ordermax.io/compare/): hub for 20 head-to-head comparison pages — NUO AI vs. 7 competitors (Selleasy, Essential, BOGOS, iCart, Upsell.com, Honeycomb, Wiser AI), plus 13 competitor-vs-competitor pages; pricing read from each vendor's own App Store listing
+- [BOGOS vs Honeycomb](https://ordermax.io/compare/bogos-vs-honeycomb/): competitor-vs-competitor upsell app comparison
+- [BOGOS vs iCart](https://ordermax.io/compare/bogos-vs-icart/): cart drawer upsell, competitor-vs-competitor comparison
+- [Selleasy vs BOGOS](https://ordermax.io/compare/bogos-vs-selleasy/): free gift bundle upsell, competitor-vs-competitor comparison
+- [BOGOS vs Wiser AI](https://ordermax.io/compare/bogos-vs-wiser-ai/): free plan caps, competitor-vs-competitor comparison
+- [Essential vs Honeycomb](https://ordermax.io/compare/essential-vs-honeycomb/): competitor-vs-competitor upsell app comparison
+- [iCart vs Essential](https://ordermax.io/compare/essential-vs-icart/): competitor-vs-competitor upsell app comparison
+- [Selleasy vs Essential](https://ordermax.io/compare/essential-vs-selleasy/): upsell and cross-sell, competitor-vs-competitor comparison
+- [Essential vs Wiser AI](https://ordermax.io/compare/essential-vs-wiser-ai/): competitor-vs-competitor upsell app comparison
+- [iCart vs Honeycomb](https://ordermax.io/compare/honeycomb-vs-icart/): cart drawer vs. funnel upsell, competitor-vs-competitor comparison
+- [Honeycomb vs Wiser AI](https://ordermax.io/compare/honeycomb-vs-wiser-ai/): competitor-vs-competitor upsell app comparison
+- [iCart vs Selleasy](https://ordermax.io/compare/icart-vs-selleasy/): competitor-vs-competitor upsell app comparison
+- [Selleasy vs Upsell.com (ReConvert)](https://ordermax.io/compare/selleasy-vs-upsell-com/): competitor-vs-competitor comparison
+- [Selleasy vs Wiser AI](https://ordermax.io/compare/selleasy-vs-wiser-ai/): competitor-vs-competitor upsell app comparison
 - [Shopify offers & upsell guides (blog hub)](https://ordermax.io/blog/): index of all guides, grouped by offer cluster
 - [Offers & promotions hub](https://ordermax.io/offers/): overview of all eight offer types
 - [Gift with purchase (GWP)](https://ordermax.io/offers/gift-with-purchase/): what GWP is, how to set it up, FAQ
@@ -39,6 +59,14 @@
 - [Product add-ons vs. custom product options](https://ordermax.io/blog/product-add-ons-vs-custom-options-shopify/): variant vs. custom option vs. add-on decision table and the variant-bloat consequences
 - [Shopify add-ons at checkout](https://ordermax.io/blog/add-ons-at-checkout-shopify/): the four surfaces for paid extras (product page, cart, checkout, post-purchase) and what each allows
 - [How to stack discounts on Shopify](https://ordermax.io/blog/stack-discounts-shopify/): how Shopify discount combinations work, where stacking costs margin, and a stacking policy
+- [Best free gift with purchase (GWP) apps, compared](https://ordermax.io/blog/best-free-gift-with-purchase-apps-shopify/): five apps compared by what ends the free plan (live orders, lifetime orders, campaigns, revenue); one widely-recommended app has no usable free plan on a live store; pricing read from each Shopify App Store listing on 2026-11-03
+- [Best pick-your-gift apps, compared](https://ordermax.io/blog/best-pick-your-gift-apps-shopify/): five apps that let shoppers choose their own gift from an approved set, compared by free-plan cap; read 2026-11-03
+- [Best BOGO apps, compared](https://ordermax.io/blog/best-bogo-apps-shopify/): five Buy One Get One / Buy X Get Y apps compared by free-plan cap; one has no usable free plan on a live store; read 2026-11-03
+- [Best discount stacking apps, compared](https://ordermax.io/blog/best-discount-stacking-apps-shopify/): five apps compared by free-plan cap; one's free tier is development-stores-only; read 2026-11-03
+- [Best product add-ons apps, compared](https://ordermax.io/blog/best-product-add-ons-apps-shopify/): five apps compared by free-plan cap; two restrict free use to development stores; read 2026-11-03
+- [Best frequently bought together apps, compared](https://ordermax.io/blog/best-frequently-bought-together-apps-shopify/): five FBT apps compared by free-plan cap (manual bundles, campaigns, revenue); read 2026-11-03
+- [Best AI cart upsell apps, compared](https://ordermax.io/blog/best-ai-cart-upsell-apps-shopify/): four apps compared on whether the free plan actually includes AI recommendations — one gates AI behind a paid tier; read 2026-11-03
+- [Best tiered rewards apps, compared](https://ordermax.io/blog/best-tiered-rewards-apps-shopify/): five apps split between cart-level spend-threshold tiers and points-based loyalty tiers, compared by free-plan cap; read 2026-11-03
 - [Privacy policy](https://ordermax.io/privacy-policy)
 
 ## Contact
