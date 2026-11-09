@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Gift Popup for Shopify — Offer a Gift Without Hurting UX | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Show a free gift offer as a popup on Shopify at the right moment — add to cart, threshold crossed, or exit intent. Theme-matched and frequency-capped. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/free-gift-popup/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="A gift popup that earns the interruption.">
+<meta property="og:description" content="A free gift popup that fires on a real trigger instead of on a timer. Theme-matched, frequency-capped. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/free-gift-popup/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A gift popup that earns the interruption.">
+<meta name="twitter:description" content="A free gift popup that fires on a real trigger instead of on a timer. Theme-matched, frequency-capped. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/free-gift-popup/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Free gift popup", "item": "https://ordermax.io/features/free-gift-popup/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When should a free gift popup appear?", "acceptedAnswer": {"@type": "Answer", "text": "On a behavioural trigger: after an add to cart, when the cart crosses the qualifying threshold, or on exit intent from the cart. Timer-based popups on page load perform worst and cost the most goodwill."}}, {"@type": "Question", "name": "Do popups hurt SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Interstitials that cover the main content on mobile can affect how a page is assessed, and they reliably raise bounce rate. Triggering only from cart events avoids both problems, because by then the shopper is past the pages that matter for search."}}, {"@type": "Question", "name": "How often should the same shopper see it?", "acceptedAnswer": {"@type": "Answer", "text": "Once per session is a safe cap. Repeating a dismissed offer does not raise acceptance; it raises exits."}}, {"@type": "Question", "name": "Popup or inline cart widget?", "acceptedAnswer": {"@type": "Answer", "text": "Inline by default — it never interrupts and is always available. Use a popup when the information is new (the shopper just qualified), when the shopper is leaving, or when the offer needs room for a choice of gifts."}}, {"@type": "Question", "name": "Should I ask for an email to unlock the gift?", "acceptedAnswer": {"@type": "Answer", "text": "You can, but it changes the mechanic. Acceptance drops sharply and you should then judge the popup as a lead-capture tool rather than as a gifting offer."}}, {"@type": "Question", "name": "Will the popup match my theme?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It inherits your theme's typography, spacing, and button styling, with a visual editor for overrides. No theme code is required."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftpopup_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Free gift popup</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">A gift popup that earns the interruption.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Most gift popups fail for one reason: they fire on a timer, to everyone, before the shopper has done anything. A popup tied to a real event — an add to cart, a threshold crossed, a cart about to be abandoned — is a different product. It arrives when the offer is relevant and it is gone in one click either way.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftpopup_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/gift-added-notification/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See the inline alternative</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How to run a gift popup properly</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Trigger on behaviour, not time.</strong> Fire after an add to cart, when the cart crosses a threshold, or on exit intent from the cart — never on a page-load countdown.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Say one thing.</strong> The gift, the condition, and one button. Every extra element lowers the chance the button is pressed.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Cap the frequency.</strong> Once per session is plenty. A popup a shopper has already dismissed is pure friction the second time.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Make dismissal free.</strong> A visible close control and a click-outside dismiss. Hidden closes do not raise acceptance; they raise bounces.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>When a popup beats an inline widget</h2>
+    <p>An inline cart widget is the better default: it is always available, never interrupts, and does not train shoppers to close things. Popups win in three specific situations.</p>
+    <ul>
+      <li><strong>The offer is new information.</strong> A gift the shopper has just become eligible for is worth one interruption, because it changes what the cart is worth.</li>
+      <li><strong>The shopper is leaving.</strong> On exit intent from the cart, the alternative to a popup is a lost session, so the cost of interrupting is near zero.</li>
+      <li><strong>The offer needs a choice.</strong> A <a href="/offers/pick-your-gift/">pick-your-gift</a> set with four options needs more room than a cart drawer line, and a modal gives it that room without a page change.</li>
+    </ul>
+    <p>Outside those cases, put the offer in the cart and leave it there. The general rule: interrupt when something has changed, not when time has passed.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>What kills popup performance</h2>
+    <p><strong>Firing on page load.</strong> A shopper who has not yet shown intent has nothing to lose by closing. You spend your one interruption on the audience least likely to use it and you teach everyone else to dismiss on reflex.</p>
+    <p><strong>Appearing on mobile mid-scroll.</strong> A full-screen modal over a product list is the most reliable way to end a mobile session. If you run popups on mobile, trigger them only from cart events.</p>
+    <p><strong>Asking for an email first.</strong> Gating a gift behind a form converts the offer into a lead-capture flow. That may be the trade you want, but measure it as lead capture, not as gifting, because acceptance will fall sharply.</p>
+    <p><strong>No frequency cap.</strong> A shopper who sees the same modal on four pageviews remembers the brand for the wrong reason.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Copy that works in a small box</h2>
+    <p>A popup has room for roughly fifteen words that will actually be read. Spend them on the reward and the condition, in that order: "Free travel serum with any $60 order — add it now." Lead with the gift's name rather than the word gift, because a named product is a concrete thing and a gift is a category.</p>
+    <p>Use one button. A second button, even a soft one, splits the decision and measurably lowers the primary click. The dismissal is the X, not a styled "no thanks" that looks like a choice of equal weight.</p>
+    <p>And state the cost honestly. If the gift needs a $60 cart and the shopper is at $31, say so in the popup rather than letting them click through to discover the condition in the cart. Surprises at that point cost you the sale and the goodwill.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Measuring a popup without fooling yourself</h2>
+    <p>Popup dashboards usually report impressions and clicks, which flatter the format. The number that matters is whether sessions that saw the popup converted at a higher rate and a higher value than comparable sessions that did not — and whether bounce rate moved on the pages where it fires.</p>
+    <p>Run it as an experiment rather than a launch. <a href="/features/offer-ab-testing/">A/B testing</a> the popup against the same offer rendered inline answers the only question worth asking, which is not "does the popup get clicks" but "does the popup beat the quieter version of itself".</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>When should a free gift popup appear?</summary><p>On a behavioural trigger: after an add to cart, when the cart crosses the qualifying threshold, or on exit intent from the cart. Timer-based popups on page load perform worst and cost the most goodwill.</p></details>
+      <details class="om-faq"><summary>Do popups hurt SEO?</summary><p>Interstitials that cover the main content on mobile can affect how a page is assessed, and they reliably raise bounce rate. Triggering only from cart events avoids both problems, because by then the shopper is past the pages that matter for search.</p></details>
+      <details class="om-faq"><summary>How often should the same shopper see it?</summary><p>Once per session is a safe cap. Repeating a dismissed offer does not raise acceptance; it raises exits.</p></details>
+      <details class="om-faq"><summary>Popup or inline cart widget?</summary><p>Inline by default — it never interrupts and is always available. Use a popup when the information is new (the shopper just qualified), when the shopper is leaving, or when the offer needs room for a choice of gifts.</p></details>
+      <details class="om-faq"><summary>Should I ask for an email to unlock the gift?</summary><p>You can, but it changes the mechanic. Acceptance drops sharply and you should then judge the popup as a lead-capture tool rather than as a gifting offer.</p></details>
+      <details class="om-faq"><summary>Will the popup match my theme?</summary><p>Yes. It inherits your theme's typography, spacing, and button styling, with a visual editor for overrides. No theme code is required.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Run a gift popup that converts.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftpopup_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_giftpopup_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

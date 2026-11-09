@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offer Countdown Timer for Shopify Cart Offers | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Add an honest countdown to a Shopify cart offer — real campaign end dates, not fake resetting timers. Theme-matched, no code. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/offer-countdown-timer/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Urgency that is actually true.">
+<meta property="og:description" content="A countdown tied to a real campaign end date. Urgency without the fake-scarcity backlash. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/offer-countdown-timer/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Urgency that is actually true.">
+<meta name="twitter:description" content="A countdown tied to a real campaign end date. Urgency without the fake-scarcity backlash. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/offer-countdown-timer/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Offer countdown timer", "item": "https://ordermax.io/features/offer-countdown-timer/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do countdown timers increase conversions on Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "A deadline tied to a real campaign end date gives a measurable lift during genuinely time-boxed promotions. Permanent or resetting timers do not hold up: shoppers detect them, and the credibility cost outweighs the short-term gain."}}, {"@type": "Question", "name": "Are fake countdown timers against the rules?", "acceptedAnswer": {"@type": "Answer", "text": "False urgency has been the subject of consumer-protection enforcement in the EU, UK, and US, and app platforms discourage it. Beyond the legal exposure, shoppers who spot a resetting timer discount everything else on the page too."}}, {"@type": "Question", "name": "Should the timer show seconds?", "acceptedAnswer": {"@type": "Answer", "text": "Only in the final hours. On a multi-day deadline, ticking seconds are noise and force a repaint every second on mobile. Days and hours read better and cost less."}}, {"@type": "Question", "name": "Where should the countdown appear?", "acceptedAnswer": {"@type": "Answer", "text": "Next to the offer it applies to — in the cart, on the product page, or both. A timer in the site header belongs to no specific offer and gets ignored."}}, {"@type": "Question", "name": "What happens when the campaign ends?", "acceptedAnswer": {"@type": "Answer", "text": "The timer disappears with the offer rather than sitting at zero. An expired countdown next to a live offer is worse than no countdown at all."}}, {"@type": "Question", "name": "How do I handle timezones?", "acceptedAnswer": {"@type": "Answer", "text": "State the timezone next to the deadline or render it in the shopper's local time. Either is fine; inconsistency is what generates tickets during your busiest promotion."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_countdown_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Offer countdown timer</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Urgency that is actually true.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      A countdown works because it converts a vague "soon" into a specific deadline. It stops working — and starts costing you trust — the moment the shopper notices it resets on refresh. The useful version of this feature is tied to a real campaign end date, shown only where the offer is real, and absent the rest of the time.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_countdown_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/offer-priority-rules/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See offer priority rules</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How the countdown works</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Give the campaign an end date.</strong> The timer reads the offer's actual schedule, so what the shopper sees is the real deadline.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Choose where it shows.</strong> In the cart next to the offer, on the product page, or both. It appears only while the offer is live.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It expires with the offer.</strong> When the campaign ends the timer disappears along with the offer, instead of sitting at zero.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Nothing resets per visitor.</strong> No per-session timer that restarts on every visit. The deadline is the same number for everyone, which is the only version worth running.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Why fake timers backfire</h2>
+    <p>Resetting countdowns are the most-detected dark pattern in ecommerce. Shoppers refresh, see 14:59 again, and immediately reassess everything else on the page — including the discount, the reviews, and the stock count. You do not lose one offer; you lose the credibility of the whole store, and the people most likely to notice are the repeat buyers you least want to lose.</p>
+    <p>There is also a regulatory dimension. Consumer-protection regimes in the EU, UK, and US have all taken action on false urgency, and "the app did it" is not a defence. A timer tied to a genuine campaign end date carries none of that risk and performs nearly as well, because the mechanism that makes deadlines work is specificity rather than shortness.</p>
+    <p>If the honest deadline is three days away, say three days. A real 72-hour window still converts; a fake 15-minute one converts once and then costs you a customer.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Where a timer helps and where it does not</h2>
+    <ul>
+      <li><strong>Helps: genuinely time-boxed promotions.</strong> BFCM, a seasonal gift, a launch window, a clearance push. The deadline is real and the shopper's decision is genuinely time-sensitive.</li>
+      <li><strong>Helps: the last hours of a window.</strong> A timer in the final day of a campaign is doing real work for shoppers who have been deliberating.</li>
+      <li><strong>Does not help: always-on offers.</strong> A permanent gift with purchase has no deadline, and inventing one is the fake-timer problem by another route.</li>
+      <li><strong>Does not help: low-consideration carts.</strong> If shoppers convert in one session anyway, the timer adds pressure to a decision that was not being deferred.</li>
+    </ul>
+    <p>The test is simple: if you cannot name the date and time the offer ends without checking, you should not be running a countdown on it.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Design details that matter</h2>
+    <p>Keep the timer subordinate to the offer. The reward is the reason to act; the deadline is only a reason to act now. A countdown rendered larger than the gift it accompanies inverts that and reads as pressure rather than information.</p>
+    <p>Prefer day and hour granularity over seconds for anything longer than a day. Ticking seconds on a 72-hour deadline is visual noise that also forces a repaint every second on mobile. For the final hours, minutes are the right resolution.</p>
+    <p>And handle timezones explicitly. A deadline that reads differently in Sydney than in New York produces support tickets at exactly the moment your promotion is busiest. State the timezone or render the deadline in the shopper's local time — but pick one and be consistent.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Measuring urgency honestly</h2>
+    <p>Timers tend to show flattering numbers because they are deployed during promotions, when conversion is elevated anyway. The only reliable read is a side-by-side test: the same offer, same window, with and without the countdown. <a href="/features/offer-ab-testing/">A/B testing</a> handles this, and the result is often smaller than expected — which is useful, because it tells you where the lift in your promotion is actually coming from.</p>
+    <p>Watch the secondary metrics too. A timer that lifts conversion while raising refunds or support contacts has not made you money; it has pulled purchases forward from people who then reconsidered.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Do countdown timers increase conversions on Shopify?</summary><p>A deadline tied to a real campaign end date gives a measurable lift during genuinely time-boxed promotions. Permanent or resetting timers do not hold up: shoppers detect them, and the credibility cost outweighs the short-term gain.</p></details>
+      <details class="om-faq"><summary>Are fake countdown timers against the rules?</summary><p>False urgency has been the subject of consumer-protection enforcement in the EU, UK, and US, and app platforms discourage it. Beyond the legal exposure, shoppers who spot a resetting timer discount everything else on the page too.</p></details>
+      <details class="om-faq"><summary>Should the timer show seconds?</summary><p>Only in the final hours. On a multi-day deadline, ticking seconds are noise and force a repaint every second on mobile. Days and hours read better and cost less.</p></details>
+      <details class="om-faq"><summary>Where should the countdown appear?</summary><p>Next to the offer it applies to — in the cart, on the product page, or both. A timer in the site header belongs to no specific offer and gets ignored.</p></details>
+      <details class="om-faq"><summary>What happens when the campaign ends?</summary><p>The timer disappears with the offer rather than sitting at zero. An expired countdown next to a live offer is worse than no countdown at all.</p></details>
+      <details class="om-faq"><summary>How do I handle timezones?</summary><p>State the timezone next to the deadline or render it in the shopper's local time. Either is fine; inconsistency is what generates tickets during your busiest promotion.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Run honest urgency on your offers.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_countdown_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_countdown_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

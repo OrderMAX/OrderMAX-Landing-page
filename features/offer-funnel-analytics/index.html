@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offer Funnel Analytics for Shopify Cart Offers | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="See every Shopify offer as a funnel — viewed, accepted, checkout started, order placed — with revenue influenced and discount cost per offer. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/offer-funnel-analytics/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Know which offer made you money, not just which one got clicks.">
+<meta property="og:description" content="Viewed, accepted, checkout started, order placed — per offer, with the discount cost next to the revenue. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/offer-funnel-analytics/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Know which offer made you money, not just which one got clicks.">
+<meta name="twitter:description" content="Viewed, accepted, checkout started, order placed — per offer, with the discount cost next to the revenue. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/offer-funnel-analytics/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Offer funnel analytics", "item": "https://ordermax.io/features/offer-funnel-analytics/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does Shopify's own reporting miss about offers?", "acceptedAnswer": {"@type": "Answer", "text": "The impression. Shopify records the discount applied to an order but not that an offer was shown, to whom, or whether it was declined — so there is no denominator and no way to compute an acceptance rate."}}, {"@type": "Question", "name": "What is revenue influenced?", "acceptedAnswer": {"@type": "Answer", "text": "The revenue from orders where the offer was shown and accepted. It is an upper bound, not incremental revenue, because some of those carts would have converted anyway. Always read it alongside the offer's cost."}}, {"@type": "Question", "name": "How do I measure the incremental lift of an offer?", "acceptedAnswer": {"@type": "Answer", "text": "Hold it out. Run the offer for a share of traffic and nothing for the rest, then compare revenue per session. That is the only method that separates what the offer added from what it merely touched."}}, {"@type": "Question", "name": "Why does my offer show high acceptance but no revenue lift?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because the carts accepting it already qualified without changing behaviour. Check what share of qualifying carts cleared the threshold before the offer appeared — if it is most of them, the offer is a cost rather than a lever."}}, {"@type": "Question", "name": "Where should I look if acceptance is high but orders are not?", "acceptedAnswer": {"@type": "Answer", "text": "The accepted-to-checkout gap. That pattern almost always means cart-side confusion — an unexplained line item, unclear conditions, or an offer that does not survive to checkout."}}, {"@type": "Question", "name": "Do the numbers match GA4 and Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "Not exactly, and they are not meant to. Attribution windows and session definitions differ between the three. Use offer analytics to decide about offers and Shopify's reports for financial reporting."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_funnel_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Offer funnel analytics</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Know which offer made you money, not just which one got clicks.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Shopify reports discounts given. It does not report whether an offer changed anybody's mind. Offer funnel analytics close that gap: each offer is measured as a sequence from impression to order, with the revenue it influenced set against the margin it cost.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_funnel_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/offer-ab-testing/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See A/B testing</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>What the funnel measures</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Viewed.</strong> The offer rendered and was in view. Without this denominator every other rate is guesswork.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Accepted.</strong> The shopper took the offer — added the upsell, kept the gift, completed the bundle.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Checkout started.</strong> The qualifying cart reached checkout. A gap here points at the cart, not at the offer.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Order placed.</strong> The order completed, with the influenced revenue and the discount or cost of goods attached to it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>What each drop-off actually tells you</h2>
+    <p>The value of a four-step funnel is that each gap has a different cause and a different fix.</p>
+    <ul>
+      <li><strong>Viewed to accepted is an offer problem.</strong> Low acceptance means the reward, the threshold, or the wording is wrong. Nothing downstream will rescue it.</li>
+      <li><strong>Accepted to checkout started is a cart problem.</strong> Shoppers liked the offer and then stalled — usually confusing cart messaging, an unexplained line item, or a surprise at the shipping step.</li>
+      <li><strong>Checkout started to order placed is a checkout problem.</strong> Payment friction, shipping cost, or a discount that did not survive to checkout. If a presented offer silently fails at payment, this is where it shows.</li>
+    </ul>
+    <p>Aggregate reporting collapses all three into one conversion number, which is why so many offers get cancelled for the wrong reason: a strong offer with a broken cart message looks identical to a weak offer.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Revenue influenced versus revenue created</h2>
+    <p>Every offer dashboard in ecommerce has the same honesty problem. If a cart that saw an offer converts, the offer gets credited — including for the carts that would have converted anyway. Treat influenced revenue as an upper bound, never as incremental revenue.</p>
+    <p>Two checks keep you grounded. First, the share of qualifying carts that already cleared the threshold before the offer appeared: if that is most of them, you are paying for orders you had. Second, discount cost or cost of goods shown next to influenced revenue, so the comparison is margin against margin. An offer that influenced $40,000 and cost $11,000 in free product is a different decision from one that influenced $40,000 and cost $1,100.</p>
+    <p>For the actual incremental number there is only one instrument, which is a holdout. <a href="/features/offer-ab-testing/">A/B testing</a> against no offer is the only way to measure what the offer added rather than what it touched.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Segment and offer-level splits</h2>
+    <p>A sitewide average hides the result you need. An offer that lifts first-time shoppers by 9% and does nothing for returning shoppers reports as a 2% lift — a number that gets the offer killed when the correct action was to keep it and scope it. Splitting the funnel by <a href="/features/customer-segment-targeting/">customer segment</a> turns "should we run this" into "who should we run this for", which is the question with money in it.</p>
+    <p>The other essential split is suppression. When <a href="/features/offer-priority-rules/">offer priority</a> stops an offer from showing, that cart must be recorded as suppressed rather than as not qualified — otherwise a perfectly good offer that is always outranked looks like an offer nobody wants.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How this differs from GA4 and Shopify reports</h2>
+    <p>Shopify's reports are order-centric: they know what was sold and what discount applied, and nothing about the offer impression that preceded it. GA4 can be instrumented to track offer events, but you have to define, implement, and maintain that yourself, and the result still lives apart from your product and margin data.</p>
+    <p>Offer analytics are built from the offer's own lifecycle, so the impression, the rule that fired, the acceptance, and the resulting order are one record. The three sources will not match exactly — attribution windows and session definitions differ — and that is expected. Use the offer funnel for decisions about offers, and Shopify's reports for the books.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>What does Shopify's own reporting miss about offers?</summary><p>The impression. Shopify records the discount applied to an order but not that an offer was shown, to whom, or whether it was declined — so there is no denominator and no way to compute an acceptance rate.</p></details>
+      <details class="om-faq"><summary>What is revenue influenced?</summary><p>The revenue from orders where the offer was shown and accepted. It is an upper bound, not incremental revenue, because some of those carts would have converted anyway. Always read it alongside the offer's cost.</p></details>
+      <details class="om-faq"><summary>How do I measure the incremental lift of an offer?</summary><p>Hold it out. Run the offer for a share of traffic and nothing for the rest, then compare revenue per session. That is the only method that separates what the offer added from what it merely touched.</p></details>
+      <details class="om-faq"><summary>Why does my offer show high acceptance but no revenue lift?</summary><p>Usually because the carts accepting it already qualified without changing behaviour. Check what share of qualifying carts cleared the threshold before the offer appeared — if it is most of them, the offer is a cost rather than a lever.</p></details>
+      <details class="om-faq"><summary>Where should I look if acceptance is high but orders are not?</summary><p>The accepted-to-checkout gap. That pattern almost always means cart-side confusion — an unexplained line item, unclear conditions, or an offer that does not survive to checkout.</p></details>
+      <details class="om-faq"><summary>Do the numbers match GA4 and Shopify?</summary><p>Not exactly, and they are not meant to. Attribution windows and session definitions differ between the three. Use offer analytics to decide about offers and Shopify's reports for financial reporting.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Measure your offers properly.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_funnel_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_funnel_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

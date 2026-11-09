@@ -67,6 +67,34 @@
 - [Best frequently bought together apps, compared](https://ordermax.io/blog/best-frequently-bought-together-apps-shopify/): five FBT apps compared by free-plan cap (manual bundles, campaigns, revenue); read 2026-11-03
 - [Best AI cart upsell apps, compared](https://ordermax.io/blog/best-ai-cart-upsell-apps-shopify/): four apps compared on whether the free plan actually includes AI recommendations — one gates AI behind a paid tier; read 2026-11-03
 - [Best tiered rewards apps, compared](https://ordermax.io/blog/best-tiered-rewards-apps-shopify/): five apps split between cart-level spend-threshold tiers and points-based loyalty tiers, compared by free-plan cap; read 2026-11-03
+- [Features hub](https://ordermax.io/features/): index of all 16 offer-mechanic pages, grouped by gifting, cart surfaces, quantity/bundle pricing, targeting, and measurement
+- [Auto add free gift to cart](https://ordermax.io/features/auto-add-free-gift-to-cart/): auto-adding a free gift to the cart; Shopify's native Buy X Get Y discounts a gift already in the cart but never inserts it
+- [Spend threshold gift](https://ordermax.io/features/spend-threshold-gift/): spend-threshold gifts; how to pick the threshold (commonly 15–30% above AOV) and why it must read subtotal, not total
+- [Cheapest item free](https://ordermax.io/features/cheapest-item-free/): buy N, get the cheapest qualifying item free; capped cost versus a flat percentage, and why the eligible set's price band matters
+- [Cart progress bar](https://ordermax.io/features/cart-progress-bar/): cart progress bars for gift and free-shipping thresholds; why position relative to a threshold outperforms a static banner
+- [Free gift popup](https://ordermax.io/features/free-gift-popup/): free gift popups triggered on behaviour (add to cart, threshold crossed, exit intent) rather than on a timer
+- [Gift added notification](https://ordermax.io/features/gift-added-notification/): explaining the $0 line item; why unexplained free gifts get deleted and why the removal message recovers carts
+- [Offer countdown timer](https://ordermax.io/features/offer-countdown-timer/): countdowns tied to real campaign end dates; why resetting timers are a detected dark pattern with enforcement risk
+- [Offer priority rules](https://ordermax.io/features/offer-priority-rules/): deciding which offer fires when several qualify; distinct from Shopify's product/order/shipping discount combination settings
+- [Customer segment targeting](https://ordermax.io/features/customer-segment-targeting/): different offers for new, lapsed and frequent shoppers; why gifts segment better than percentage discounts
+- [Product page offer widget](https://ordermax.io/features/product-page-offer-widget/): offers on the product page as a theme app block; product page changes selection, cart changes spend
+- [Volume discounts](https://ordermax.io/features/volume-discounts/): volume discounts and quantity breaks; tier design, per-variant vs per-product scope, and margin floors
+- [Mix and match bundle](https://ordermax.io/features/mix-and-match-bundle/): any-N-from-a-set bundles; fixed price needs a narrow price band, percentage off tolerates a wide one
+- [Build your own bundle](https://ordermax.io/features/build-your-own-bundle/): BYOB slot-based bundle builders; pre-filled recommended boxes materially raise completion
+- [Offer funnel analytics](https://ordermax.io/features/offer-funnel-analytics/): offer funnels (viewed, accepted, checkout started, order placed); revenue influenced is an upper bound, not incremental revenue
+- [Offer ab testing](https://ordermax.io/features/offer-ab-testing/): A/B testing offers; threshold tests and holdouts first, judged on revenue per session rather than acceptance rate
+- [Adaptive theme styling](https://ordermax.io/features/adaptive-theme-styling/): theme-matched widgets via theme app blocks; no Liquid edits and nothing left behind on uninstall
+- [Bogos Alternatives](https://ordermax.io/compare/bogos-alternatives/): BOGOS alternatives; BOGOS's free plan is 30 orders lifetime (one-time) and its first paid tier is $29.99/mo, per its listing
+- [Selleasy Alternatives](https://ordermax.io/compare/selleasy-alternatives/): Selleasy alternatives; Selleasy's 50-orders/mo free cap counts total store orders, not app-influenced orders
+- [Icart Alternatives](https://ordermax.io/compare/icart-alternatives/): iCart alternatives; iCart gives 100 free orders for the lifetime of the store and replaces the cart drawer itself
+- [Honeycomb Alternatives](https://ordermax.io/compare/honeycomb-alternatives/): Honeycomb alternatives; Honeycomb caps on 100 funnel views/mo (impressions, not orders) and its first paid tier is $54.99/mo
+- [Wiser Ai Alternatives](https://ordermax.io/compare/wiser-ai-alternatives/): Wiser AI alternatives; Wiser AI is free to 50 orders/mo then $9/mo, and is a recommendation engine rather than a promotions engine
+- [Essential Upsell Alternatives](https://ordermax.io/compare/essential-upsell-alternatives/): Essential Upsell alternatives; Essential's free plan ends at $100 of app-generated revenue, so a well-performing app exhausts it quickly
+- [Shopify buy x get y not working](https://ordermax.io/blog/shopify-buy-x-get-y-not-working/): nine causes a Shopify Buy X Get Y discount does not apply, ordered by frequency; the top cause is that Shopify never adds the Y item
+- [Free gift not adding to cart shopify](https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/): why a free gift is missing from the cart; native discounts never insert items, plus out-of-stock gifts and threshold-unit mismatches
+- [Shopify discount not combining](https://ordermax.io/blog/shopify-discount-not-combining/): Shopify's product/order/shipping discount classes, per-discount combination settings (off by default), and why stacking is usually a margin mistake
+- [Automatic discount not applying shopify](https://ordermax.io/blog/automatic-discount-not-applying-shopify/): twelve-point checklist for a silent automatic discount: active-discount limits, timezones, market scope, collection membership, sales channels
+- [Shopify offers & upsell glossary](https://ordermax.io/glossary/): 36 terms defined with DefinedTermSet schema — GWP, BXGY, cheapest item free, quantity breaks, discount classes, offer funnel, revenue influenced vs incremental revenue, holdout, attach rate
 - [Privacy policy](https://ordermax.io/privacy-policy)
 
 ## Contact

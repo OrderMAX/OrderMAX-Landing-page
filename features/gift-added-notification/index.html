@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gift Added Notification in the Shopify Cart | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Tell shoppers why a free gift appeared in their Shopify cart. Inline confirmation messages that cut support tickets and build trust. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/gift-added-notification/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Explain the gift the moment it appears.">
+<meta property="og:description" content="A one-line confirmation explaining why the free gift is in the cart. Fewer tickets, more trust. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/gift-added-notification/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Explain the gift the moment it appears.">
+<meta name="twitter:description" content="A one-line confirmation explaining why the free gift is in the cart. Fewer tickets, more trust. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/gift-added-notification/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Gift added notification", "item": "https://ordermax.io/features/gift-added-notification/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do shoppers remove free gifts from the cart?", "acceptedAnswer": {"@type": "Answer", "text": "Almost always because they do not know what the item is. An unexplained $0 line reads as a store error or a hidden charge, and deleting it is the safe response. A one-line explanation under the line item removes the ambiguity."}}, {"@type": "Question", "name": "Should I announce when the gift is removed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — it is the more valuable message of the two. \"Free serum removed — add $12 to get it back\" gives the shopper a small, concrete action with a known reward at the exact moment they are editing the cart."}}, {"@type": "Question", "name": "Where should the message go?", "acceptedAnswer": {"@type": "Answer", "text": "Attached to the gift's own cart line, under the product title. Messages at the top of the cart get mentally filed as store announcements rather than as information about that item."}}, {"@type": "Question", "name": "Is a toast notification enough?", "acceptedAnswer": {"@type": "Answer", "text": "No. Toasts disappear and are easy to miss, including for screen reader users. Announce the change in a live region and keep a persistent label on the line item."}}, {"@type": "Question", "name": "Can I customise the wording?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The message text is editable per offer, so you can name the specific gift and state the specific rule rather than using generic copy."}}, {"@type": "Question", "name": "Does this reduce support tickets?", "acceptedAnswer": {"@type": "Answer", "text": "It targets the most common gifting ticket there is — \"what is this item in my cart\" — which is why it tends to pay for itself in support time before it shows up in conversion."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftnotice_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Gift added notification</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Explain the gift the moment it appears.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      An unexplained $0 line item looks like a bug. Shoppers who do not understand why something is in their cart delete it, open a support ticket, or abandon the order — all three of which cost more than the gift. One sentence under the line item fixes it.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftnotice_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/auto-add-free-gift-to-cart/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See auto-add</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How the notification works</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It fires on the state change.</strong> The message appears at the moment the gift is added, not as permanent cart furniture nobody reads.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It names the reason.</strong> "Free travel serum added — your cart is over $60." The reward and the rule, in one line.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It stays attached to the line.</strong> A short label under the gift line item persists, so the explanation is still there when the shopper returns to the cart later.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It reverses cleanly.</strong> If the cart stops qualifying, the removal is announced too — which is the message that recovers the cart.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The cost of an unexplained line item</h2>
+    <p>Put yourself in the shopper's cart. A product you did not add has appeared, priced at zero. The three available readings are: the store made a mistake, something is going to be charged later, or this is a gift. Only one of those leads to checkout, and nothing on the screen tells the shopper which it is.</p>
+    <p>In practice the cost shows up in three places. Support volume rises on "what is this item" tickets. Gift removal rates climb, which wastes the acceptance you already earned. And a share of shoppers simply stop, because an unexplained charge risk at the cart stage is exactly the moment people decide to come back later and then do not.</p>
+    <p>None of this is a gifting problem. It is a communication problem with a one-line fix, and it is the most common thing missing from otherwise well-built gift offers.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>What the removal message does</h2>
+    <p>The confirmation is the obvious half. The more valuable half is the reversal. When a shopper removes an item and drops below the threshold, the gift leaves too — and if that happens silently, the shopper experiences an unexplained loss, which lands worse than an unexplained gain.</p>
+    <p>Announced, the same event becomes the strongest message in the cart: "Free travel serum removed — add $12 to get it back." The shopper now has a concrete, small action with a known reward, at the exact moment they were editing the cart anyway. Pair it with a <a href="/features/cart-progress-bar/">progress bar</a> and the path back is visible as well as stated.</p>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Writing the message</h2>
+    <p>Keep it to one sentence and put the reward first. Four rules cover most cases:</p>
+    <ul>
+      <li><strong>Name the product.</strong> "Free travel serum" is concrete; "your free gift" is not.</li>
+      <li><strong>State the rule that fired.</strong> Shoppers trust offers they can verify, and the rule is what makes the gift feel earned rather than arbitrary.</li>
+      <li><strong>Avoid exclamation marks and urgency language.</strong> This is a confirmation, not a promotion. Hype here reads as a sales trick and undermines the trust the message exists to build.</li>
+      <li><strong>Do not hide the conditions.</strong> If the gift goes away when the cart changes, say so once, plainly, rather than letting the shopper discover it.</li>
+    </ul>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Accessibility and placement</h2>
+    <p>A message that only exists as a transient toast is invisible to anyone who looked away, and often to screen readers as well. Announce the change in a live region so assistive technology reads it, and keep a persistent label on the line item so the explanation survives the toast.</p>
+    <p>Place the label directly under the gift's title, inside the same row. Messages parked at the top of the cart get read as store-wide announcements and are mentally filed with shipping notices rather than with the item they describe.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Why do shoppers remove free gifts from the cart?</summary><p>Almost always because they do not know what the item is. An unexplained $0 line reads as a store error or a hidden charge, and deleting it is the safe response. A one-line explanation under the line item removes the ambiguity.</p></details>
+      <details class="om-faq"><summary>Should I announce when the gift is removed?</summary><p>Yes — it is the more valuable message of the two. "Free serum removed — add $12 to get it back" gives the shopper a small, concrete action with a known reward at the exact moment they are editing the cart.</p></details>
+      <details class="om-faq"><summary>Where should the message go?</summary><p>Attached to the gift's own cart line, under the product title. Messages at the top of the cart get mentally filed as store announcements rather than as information about that item.</p></details>
+      <details class="om-faq"><summary>Is a toast notification enough?</summary><p>No. Toasts disappear and are easy to miss, including for screen reader users. Announce the change in a live region and keep a persistent label on the line item.</p></details>
+      <details class="om-faq"><summary>Can I customise the wording?</summary><p>Yes. The message text is editable per offer, so you can name the specific gift and state the specific rule rather than using generic copy.</p></details>
+      <details class="om-faq"><summary>Does this reduce support tickets?</summary><p>It targets the most common gifting ticket there is — "what is this item in my cart" — which is why it tends to pay for itself in support time before it shows up in conversion.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Make your gift offers self-explaining.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftnotice_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_giftnotice_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

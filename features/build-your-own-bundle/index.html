@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build Your Own Bundle (BYOB) for Shopify | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Let Shopify shoppers build their own bundle or box from slots you define — pick 4, pay one price. Guided assembly, cart-side pricing. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/build-your-own-bundle/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Let the shopper build the box.">
+<meta property="og:description" content="Pick 4, pay one price — a guided bundle builder where the shopper assembles the box. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/build-your-own-bundle/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Let the shopper build the box.">
+<meta name="twitter:description" content="Pick 4, pay one price — a guided bundle builder where the shopper assembles the box. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/build-your-own-bundle/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Build your own bundle", "item": "https://ordermax.io/features/build-your-own-bundle/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can Shopify do build your own bundle natively?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify's native bundles are fixed component sets defined in advance. A shopper-assembled box needs slot logic, a guided build flow, and cart-side pricing of an arbitrary combination, which is what an app provides."}}, {"@type": "Question", "name": "How many slots should a bundle builder have?", "acceptedAnswer": {"@type": "Answer", "text": "Four to six for most stores — enough to lift order value, few enough to finish in one sitting. Larger boxes work in food and drink where the format is familiar, and tend to be abandoned elsewhere."}}, {"@type": "Question", "name": "How do I stop shoppers abandoning a half-built box?", "acceptedAnswer": {"@type": "Answer", "text": "Pre-fill a recommended box they can edit, keep a visible slot counter and running total, and make the per-slot reward explicit if you use a tiered discount. Starting from a suggestion rather than empty slots is the biggest single improvement available."}}, {"@type": "Question", "name": "Should the box be one SKU or several line items?", "acceptedAnswer": {"@type": "Answer", "text": "Several line items. A single-SKU box hides the contents from your pickers and makes component inventory drift. Real lines keep stock accurate and the packing slip readable."}}, {"@type": "Question", "name": "Can different slots have different products?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Restricted slots — three teas plus one accessory, for example — usually produce a better product and a better margin than the same number of unrestricted choices."}}, {"@type": "Question", "name": "How should the box be priced?", "acceptedAnswer": {"@type": "Answer", "text": "A fixed box price if components are close in price. A percentage off the assembled components if they vary widely. For six slots or more, a discount that deepens as the box fills is the most effective at getting it filled."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_byob_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Build your own bundle</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Let the shopper build the box.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Build your own bundle turns assembly into the product. The shopper fills a defined number of slots from a set you control, and the finished box is priced as one thing. It is the highest average order value mechanic in gifting and food, and the one most sensitive to how the flow is designed.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_byob_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/mix-and-match-bundle/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">Compare with mix & match</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How a bundle builder works</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Define the slots.</strong> How many items the box holds — four, six, twelve — and whether any slot is restricted to a particular category.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Set the eligible products per slot.</strong> One shared set, or different sets per slot so a box can require, say, three teas and one accessory.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Price the finished box.</strong> A fixed box price, or a discount that grows as the box fills. The box price is what the shopper evaluates, not the component prices.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Guide to completion.</strong> Slot counters show what remains. An incomplete box is the single biggest leak in this mechanic, and the counter is what closes it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Why BYOB lifts order value so much</h2>
+    <p>Three things compound. First, the box sets the quantity: a four-slot box is a four-item order by definition, where the same shopper browsing normally would have bought one or two. Second, the price is evaluated once, for the box, so individual item prices stop being compared — which removes the per-item hesitation that caps normal carts. Third, assembly creates ownership. A box the shopper built is harder to abandon than a cart they filled, because the effort already spent is theirs.</p>
+    <p>The same effects explain the failure mode. If the box is too large or the choices too many, assembly becomes work instead of play, and a half-built box is abandoned more readily than a half-filled cart — the shopper has nothing until it is finished. Everything in BYOB design is a trade between the ownership effect and the effort cost.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Designing the slots</h2>
+    <ul>
+      <li><strong>Four to six slots for most stores.</strong> Enough to lift order value, few enough to finish in one sitting. Twelve-slot boxes work in food and drink where the format is familiar, and poorly elsewhere.</li>
+      <li><strong>Keep the choice per slot under about ten items.</strong> Choice overload is real and it shows up as abandoned builds, not as slower builds.</li>
+      <li><strong>Use restricted slots to protect the box.</strong> "Three teas plus one accessory" produces a better product and a better margin than four free choices across the same set.</li>
+      <li><strong>Pre-fill a recommended box.</strong> A shopper who can start from a suggestion and edit it completes far more often than one facing four empty slots. This is the single highest-impact detail in the whole mechanic.</li>
+      <li><strong>Allow duplicates, usually.</strong> Blocking two of the same item frustrates the shopper who knows what they want for no margin benefit.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Pricing a shopper-assembled box</h2>
+    <p>A fixed box price is the clearest offer and demands a narrow price band across the eligible set, exactly as it does in <a href="/features/mix-and-match-bundle/">mix and match</a>. If your components range widely, price the box as a percentage off the assembled components instead — the shopper still sees one number at the end, and your margin stays proportionate.</p>
+    <p>A third option suits large boxes: a discount that deepens as the box fills. 10% at two items, 15% at four, 20% at six, shown live as the box grows. This makes the slot counter do double duty, because each slot now has a visible monetary reward, and it is the most effective way to get a six-slot box actually filled.</p>
+    <p>Whatever the model, show the running total and the saving. A builder that hides the price until the end gets abandoned at the end, which is the most expensive place to lose someone.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Inventory, fulfilment, and the operational detail</h2>
+    <p>BYOB produces a long tail of unique order compositions, and that lands on operations. Two decisions prevent most of the pain.</p>
+    <p><strong>Keep components as real line items.</strong> If the box is a single SKU, your picker cannot see what is in it and your stock counts drift. Components as lines mean inventory decrements correctly and the packing slip is self-explanatory.</p>
+    <p><strong>Handle out-of-stock mid-build.</strong> A shopper who has filled three slots and finds the fourth item gone should see it removed from the choices with a one-line explanation, not an error at checkout. Exclude low-stock items from the eligible set during promotions rather than discovering the limit under load — the same discipline a <a href="/features/auto-add-free-gift-to-cart/">free gift offer</a> needs.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Can Shopify do build your own bundle natively?</summary><p>No. Shopify's native bundles are fixed component sets defined in advance. A shopper-assembled box needs slot logic, a guided build flow, and cart-side pricing of an arbitrary combination, which is what an app provides.</p></details>
+      <details class="om-faq"><summary>How many slots should a bundle builder have?</summary><p>Four to six for most stores — enough to lift order value, few enough to finish in one sitting. Larger boxes work in food and drink where the format is familiar, and tend to be abandoned elsewhere.</p></details>
+      <details class="om-faq"><summary>How do I stop shoppers abandoning a half-built box?</summary><p>Pre-fill a recommended box they can edit, keep a visible slot counter and running total, and make the per-slot reward explicit if you use a tiered discount. Starting from a suggestion rather than empty slots is the biggest single improvement available.</p></details>
+      <details class="om-faq"><summary>Should the box be one SKU or several line items?</summary><p>Several line items. A single-SKU box hides the contents from your pickers and makes component inventory drift. Real lines keep stock accurate and the packing slip readable.</p></details>
+      <details class="om-faq"><summary>Can different slots have different products?</summary><p>Yes. Restricted slots — three teas plus one accessory, for example — usually produce a better product and a better margin than the same number of unrestricted choices.</p></details>
+      <details class="om-faq"><summary>How should the box be priced?</summary><p>A fixed box price if components are close in price. A percentage off the assembled components if they vary widely. For six slots or more, a discount that deepens as the box fills is the most effective at getting it filled.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Launch a bundle builder free.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_byob_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_byob_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

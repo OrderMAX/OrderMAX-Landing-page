@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Page Offer Widget for Shopify | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Show a free gift or bundle offer on the Shopify product page, before the add to cart. Theme-matched app block, no code required. Free app.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/features/product-page-offer-widget/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Put the offer where the decision happens.">
+<meta property="og:description" content="Put the offer on the product page, where the decision is actually made. Theme-matched app block. Free to install.">
+<meta property="og:url" content="https://ordermax.io/features/product-page-offer-widget/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Put the offer where the decision happens.">
+<meta name="twitter:description" content="Put the offer on the product page, where the decision is actually made. Theme-matched app block. Free to install.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "@id": "https://ordermax.io/features/product-page-offer-widget/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Features", "item": "https://ordermax.io/features/"}, {"@type": "ListItem", "position": 3, "name": "Product page offer widget", "item": "https://ordermax.io/features/product-page-offer-widget/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where should the offer widget go on a Shopify product page?", "acceptedAnswer": {"@type": "Answer", "text": "Directly under the add to cart button. Above-button placement delays the primary action for every visitor in order to serve the minority who engage with the offer, and on mobile it frequently pushes the button below the fold."}}, {"@type": "Question", "name": "Do I need to edit my theme code?", "acceptedAnswer": {"@type": "Answer", "text": "No. The widget is a theme app block you place in the theme editor, and removing it is a single click. No Liquid edits and nothing left behind if you uninstall."}}, {"@type": "Question", "name": "Product page or cart — which converts better?", "acceptedAnswer": {"@type": "Answer", "text": "They do different jobs. Offers that change what the shopper selects — quantity breaks, BOGO on that item, bundle pricing — belong on the product page. Offers that change total spend, like threshold gifts, work in the cart."}}, {"@type": "Question", "name": "Should the widget appear on every product?", "acceptedAnswer": {"@type": "Answer", "text": "No. Scope it to the products the offer actually applies to. A sitewide widget hedging with \"selected products qualify\" is noise on every page where the offer does not apply."}}, {"@type": "Question", "name": "Can the copy reflect the shopper's current cart?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The widget evaluates the live rule against the current cart, so it can say \"spend $18 more\" rather than stating a threshold and leaving the shopper to do the arithmetic."}}, {"@type": "Question", "name": "Will it match my theme?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It inherits your theme's typography, spacing, and button styling by default, with a visual editor for deliberate overrides."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_pdpwidget_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/features/" style="color:#534B73">Features</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Product page offer widget</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Put the offer where the decision happens.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      By the time a shopper reaches the cart, the product choice is made. A product page widget moves the offer upstream to the moment the decision is still open — which changes what the shopper adds, not just how much they add afterwards.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_pdpwidget_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/adaptive-theme-styling/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">See theme-matched styling</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>How the product page widget works</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Add the app block.</strong> Place it in your theme editor next to the buy button. No theme code, no Liquid edits, and it is removable in one click.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Scope it to products.</strong> Show it on specific products, a collection, or everything. A widget on every product is a widget nobody reads.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It states the live condition.</strong> "Add one more and the second is free" or "spend $20 more for a free serum" — evaluated against the current cart, not hardcoded copy.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">It carries through to the cart.</strong> The offer the shopper saw on the product page is the offer that resolves in the cart, so nothing changes under them.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Product page versus cart: what each surface is good at</h2>
+    <p>The cart is where quantity decisions happen. The shopper has committed to a product and is now deciding how much. Threshold gifts, progress bars, and cross-sells all belong there because they operate on a cart that exists.</p>
+    <p>The product page is where selection decisions happen — which product, which variant, how many. Offers that change selection belong here: quantity breaks, BOGO on this specific item, bundle pricing. Telling a shopper in the cart that buying two of something would have been cheaper per unit is information arriving one step too late, and it produces the frustrating experience of having to go back.</p>
+    <p>The practical rule: if the offer would change what the shopper puts in the cart, it goes on the product page. If it would change how much they spend overall, the cart is fine.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Keeping it out of the way of the buy button</h2>
+    <p>The product page's job is the add to cart. A widget that pushes the button below the fold on mobile costs more conversion than any offer recovers, and this is the most common way product page offers go wrong.</p>
+    <ul>
+      <li><strong>Sit under the button, not above it.</strong> Above-button placement delays the primary action for every shopper to serve the subset who care about the offer.</li>
+      <li><strong>One or two lines, no heading.</strong> The offer is a note on the purchase, not a section of the page.</li>
+      <li><strong>Check mobile at 375px.</strong> If the buy button is not visible without scrolling, the widget is too big regardless of how it looks on desktop.</li>
+      <li><strong>Limit to products where it applies.</strong> A sitewide widget that says "some products qualify" is noise on every page it appears.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Writing live, specific copy</h2>
+    <p>Static offer copy on a product page ages badly and frequently lies. "Buy 2, save 15%" sitting on a page after the campaign ended is a promise checkout will not keep. Copy generated from the live rule cannot drift, because there is nothing to update by hand.</p>
+    <p>Specificity also raises performance. "Add 1 more for a free travel serum" names the action and the reward; "multi-buy discounts available" names neither. Where the shopper's current cart is relevant, use it: a shopper at $42 reading "spend $18 more" is being given an arithmetic answer, which is strictly more useful than being given the threshold and left to subtract.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Measuring an upstream offer</h2>
+    <p>Product page offers are harder to attribute than cart offers, because their effect appears one step later — in what gets added, not in a click on the widget. Judging them by widget clicks will understate them badly.</p>
+    <p>Use two measures instead. Units per order on products where the widget runs, compared with products where it does not, and the share of sessions reaching the cart with a qualifying cart composition. <a href="/features/offer-funnel-analytics/">Funnel analytics</a> track the offer from product-page view through to order so the upstream impression is credited for the downstream order, and an <a href="/features/offer-ab-testing/">A/B test</a> on placement settles the mobile-position question for your theme specifically.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Where should the offer widget go on a Shopify product page?</summary><p>Directly under the add to cart button. Above-button placement delays the primary action for every visitor in order to serve the minority who engage with the offer, and on mobile it frequently pushes the button below the fold.</p></details>
+      <details class="om-faq"><summary>Do I need to edit my theme code?</summary><p>No. The widget is a theme app block you place in the theme editor, and removing it is a single click. No Liquid edits and nothing left behind if you uninstall.</p></details>
+      <details class="om-faq"><summary>Product page or cart — which converts better?</summary><p>They do different jobs. Offers that change what the shopper selects — quantity breaks, BOGO on that item, bundle pricing — belong on the product page. Offers that change total spend, like threshold gifts, work in the cart.</p></details>
+      <details class="om-faq"><summary>Should the widget appear on every product?</summary><p>No. Scope it to the products the offer actually applies to. A sitewide widget hedging with "selected products qualify" is noise on every page where the offer does not apply.</p></details>
+      <details class="om-faq"><summary>Can the copy reflect the shopper's current cart?</summary><p>Yes. The widget evaluates the live rule against the current cart, so it can say "spend $18 more" rather than stating a threshold and leaving the shopper to do the arithmetic.</p></details>
+      <details class="om-faq"><summary>Will it match my theme?</summary><p>Yes. It inherits your theme's typography, spacing, and button styling by default, with a visual editor for deliberate overrides.</p></details>
+      <details class="om-faq"><summary>Is it free?</summary><p>Yes. Every NUO AI feature is included at $0 — no paid tier, no order cap, no revenue share.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Add an offer to your product pages free.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_pdpwidget_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_pdpwidget_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Gift Not Adding to Cart on Shopify? Here's Why | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Free gift not being added to the Shopify cart? The usual causes: native discounts never add the item, out-of-stock gifts, threshold counted on the wrong total, and theme cart conflicts.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="The free gift is not in the cart. Here is why.">
+<meta property="og:description" content="The free gift is not appearing in the cart. Here are the causes, in the order they actually happen.">
+<meta property="og:url" content="https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The free gift is not in the cart. Here is why.">
+<meta name="twitter:description" content="The free gift is not appearing in the cart. Here are the causes, in the order they actually happen.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/#article", "headline": "The free gift is not in the cart. Here is why.", "description": "Free gift not being added to the Shopify cart? The usual causes: native discounts never add the item, out-of-stock gifts, threshold counted on the wrong total, and theme cart conflicts.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/"}, "author": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/"}, "publisher": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/", "logo": {"@type": "ImageObject", "url": "https://ordermax.io/images/logo.png"}}}, {"@type": "BreadcrumbList", "@id": "https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ordermax.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Troubleshooting", "item": "https://ordermax.io/blog/free-gift-not-adding-to-cart-shopify/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is my free gift not being added to the Shopify cart?", "acceptedAnswer": {"@type": "Answer", "text": "If you built the offer with Shopify's native Buy X Get Y discount, it never adds the item — it only discounts a gift the shopper has already added. If you used an app, the most common causes are the gift being out of stock and the threshold being measured on a different total than you expect."}}, {"@type": "Question", "name": "Can Shopify add a free product to the cart automatically?", "acceptedAnswer": {"@type": "Answer", "text": "Not natively. Shopify's discounts change prices; they do not insert line items. Automatic insertion requires an app that owns the cart surface."}}, {"@type": "Question", "name": "Why did the free gift disappear from the cart?", "acceptedAnswer": {"@type": "Answer", "text": "The cart stopped qualifying. Usually a discount code lowered the subtotal below the threshold, or an item was removed. That removal is correct behaviour, but it should be announced with the amount needed to get the gift back."}}, {"@type": "Question", "name": "Does a discount code affect my gift threshold?", "acceptedAnswer": {"@type": "Answer", "text": "It can. Whether the threshold reads pre-discount or post-discount subtotal changes the answer on the same cart. Decide which it is deliberately and keep it consistent across campaigns so your reporting stays comparable."}}, {"@type": "Question", "name": "The gift shows in the cart but not at checkout — why?", "acceptedAnswer": {"@type": "Answer", "text": "A discount combination conflict. Shopify re-evaluates discounts at checkout under its product, order, and shipping combination rules, and a non-combinable discount can override the gift. Check the combination settings on every active discount."}}, {"@type": "Question", "name": "Does the free gift use real inventory?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if it is a real catalog product — which it should be, so stock, weight, and fulfilment behave normally. That also means an out-of-stock gift cannot be added, which is the most common mid-promotion failure."}}, {"@type": "Question", "name": "I published a new theme and the gift stopped working.", "acceptedAnswer": {"@type": "Answer", "text": "Theme app blocks are per-theme. Re-add the app's cart block in the newly published theme — the configuration in the old theme does not carry over."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftfix_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/blog/" style="color:#534B73">Blog</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Troubleshooting</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">The free gift is not in the cart. Here is why.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      This symptom has two completely different explanations depending on how the offer was built. If you used Shopify's native discounts, nothing is broken — they never add items. If you used an app, the cause is usually stock, the threshold unit, or your theme's cart. Work through both paths below.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftfix_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/features/auto-add-free-gift-to-cart/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">How auto-add works</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Start here: which setup are you using?</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Native Shopify discount?</strong> Then this is expected behaviour, not a fault. Shopify's Buy X Get Y discounts a gift that is already in the cart; it never inserts one. Skip to the first section below.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">An app, and the gift never appears?</strong> Check stock, then the threshold unit, then whether the app's cart block is actually installed in your current theme.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">An app, and the gift appears then vanishes?</strong> The cart has stopped qualifying — usually a discount lowering the subtotal below the threshold, or an item removal.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Appears in the cart but not at checkout?</strong> A discount combination conflict. The gift's $0 price is being overridden by another discount's rules at checkout.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>If you used Shopify's native discounts</h2>
+    <p>Shopify's automatic Buy X Get Y discount can set a product's price to 100% off. What it cannot do is put that product in the cart. The shopper has to add the gift themselves, and then the discount zeroes it.</p>
+    <p>So a cart that qualifies but contains no gift is working exactly as designed, and no amount of reconfiguring will change it. Your options are to instruct the shopper clearly in the cart and on the product page, or to use something that owns the cart surface and can insert the line. This is the single most common reason gifting campaigns underperform on Shopify, and it is almost always discovered after launch.</p>
+    <p>The related trap: if the shopper adds the gift before the cart qualifies, they will see it at full price, which reads as a broken offer. Native discounts have no way to explain themselves in the cart, which is why <a href="/features/gift-added-notification/">the explanation message</a> matters as much as the rule.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>App setups: the five usual causes</h2>
+    <ul>
+      <li><strong>The gift is out of stock.</strong> Gifts are real catalog products. If stock hits zero, or if the product does not allow overselling, the line cannot be created. This is the most common app-side cause by a wide margin, and it appears mid-promotion rather than at launch.</li>
+      <li><strong>The threshold is counted on a different number than you think.</strong> Subtotal, total, pre-discount, post-discount — these give different answers on the same cart. A cart at $62 with a 10% code is $55.80 post-discount and will not clear a $60 post-discount threshold.</li>
+      <li><strong>The app block is not in the live theme.</strong> Theme app blocks are per-theme. If you duplicated a theme, published a new one, or had a developer make changes, the block may exist only in the old theme.</li>
+      <li><strong>The offer is scheduled or paused.</strong> Check the campaign's own status and dates before anything else in the app.</li>
+      <li><strong>Priority suppressed it.</strong> If another offer outranks this one for that cart, the gift will not appear. <a href="/features/offer-priority-rules/">Offer priority</a> determines which one fires.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The gift appears and then disappears</h2>
+    <p>This is correct behaviour being experienced as a bug. If the cart stops qualifying, the gift should be removed — otherwise shoppers reach checkout with a freebie they no longer earned. Three things commonly trigger it:</p>
+    <p><strong>A discount code applied after the gift.</strong> The code lowers the subtotal below the threshold, so the gift leaves. This is the most confusing version for shoppers, because the action that felt like a saving removed a reward. Decide deliberately whether your threshold counts pre- or post-discount subtotal, and keep it consistent.</p>
+    <p><strong>An item removed or a quantity reduced.</strong> Expected, and worth announcing rather than doing silently — "free serum removed, add $12 to get it back" recovers a share of those carts.</p>
+    <p><strong>Currency conversion.</strong> If your threshold is set in your store currency and the shopper is buying in another, the converted subtotal can sit either side of the line as rates move.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>In the cart but not at checkout</h2>
+    <p>If the gift's $0 price survives the cart and then reverts at checkout, the problem is discount combination. Shopify evaluates discounts at checkout under its own product, order, and shipping combination rules, and a $0 gift created by a discount can lose to another discount that is not marked combinable.</p>
+    <p>Check the combination settings on every active discount, not just the gift's. Then test the exact cart in a fresh incognito session all the way to the checkout page. A gift that fails only at checkout is the most expensive version of this bug — the shopper has already decided to buy, and the thing that changes under them is a reward.</p>
+    <p>If you are running several overlapping promotions, this is also the symptom that tells you to simplify. See <a href="/offers/discount-stacking/">discount stacking</a> for what Shopify will and will not honour.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Why is my free gift not being added to the Shopify cart?</summary><p>If you built the offer with Shopify's native Buy X Get Y discount, it never adds the item — it only discounts a gift the shopper has already added. If you used an app, the most common causes are the gift being out of stock and the threshold being measured on a different total than you expect.</p></details>
+      <details class="om-faq"><summary>Can Shopify add a free product to the cart automatically?</summary><p>Not natively. Shopify's discounts change prices; they do not insert line items. Automatic insertion requires an app that owns the cart surface.</p></details>
+      <details class="om-faq"><summary>Why did the free gift disappear from the cart?</summary><p>The cart stopped qualifying. Usually a discount code lowered the subtotal below the threshold, or an item was removed. That removal is correct behaviour, but it should be announced with the amount needed to get the gift back.</p></details>
+      <details class="om-faq"><summary>Does a discount code affect my gift threshold?</summary><p>It can. Whether the threshold reads pre-discount or post-discount subtotal changes the answer on the same cart. Decide which it is deliberately and keep it consistent across campaigns so your reporting stays comparable.</p></details>
+      <details class="om-faq"><summary>The gift shows in the cart but not at checkout — why?</summary><p>A discount combination conflict. Shopify re-evaluates discounts at checkout under its product, order, and shipping combination rules, and a non-combinable discount can override the gift. Check the combination settings on every active discount.</p></details>
+      <details class="om-faq"><summary>Does the free gift use real inventory?</summary><p>Yes, if it is a real catalog product — which it should be, so stock, weight, and fulfilment behave normally. That also means an out-of-stock gift cannot be added, which is the most common mid-promotion failure.</p></details>
+      <details class="om-faq"><summary>I published a new theme and the gift stopped working.</summary><p>Theme app blocks are per-theme. Re-add the app's cart block in the newly published theme — the configuration in the old theme does not carry over.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Add gifts that actually appear.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_giftfix_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_giftfix_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

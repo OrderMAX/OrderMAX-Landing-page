@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shopify Discounts Not Combining? The Rules, Explained | NUO AI</title>
+<link rel="icon" type="image/png" href="/images/logo.png">
+<meta name="description" content="Why two Shopify discounts will not apply together: the product, order and shipping classes, the per-discount combination settings, and the cases Shopify does not allow at all.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://ordermax.io/blog/shopify-discount-not-combining/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="NUO AI">
+<meta property="og:title" content="Two discounts, one cart, and only one applied.">
+<meta property="og:description" content="Two discounts, one cart, no stacking. Here are Shopify's actual combination rules.">
+<meta property="og:url" content="https://ordermax.io/blog/shopify-discount-not-combining/">
+<meta property="og:image" content="https://ordermax.io/images/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Two discounts, one cart, and only one applied.">
+<meta name="twitter:description" content="Two discounts, one cart, no stacking. Here are Shopify's actual combination rules.">
+<meta name="twitter:image" content="https://ordermax.io/images/social-preview.png">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://ordermax.io/blog/shopify-discount-not-combining/#article", "headline": "Two discounts, one cart, and only one applied.", "description": "Why two Shopify discounts will not apply together: the product, order and shipping classes, the per-discount combination settings, and the cases Shopify does not allow at all.", "datePublished": "2026-11-01", "dateModified": "2026-11-01", "inLanguage": "en", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://ordermax.io/blog/shopify-discount-not-combining/"}, "author": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/"}, "publisher": {"@type": "Organization", "name": "NUO AI", "url": "https://ordermax.io/", "logo": {"@type": "ImageObject", "url": "https://ordermax.io/images/logo.png"}}}, {"@type": "BreadcrumbList", "@id": "https://ordermax.io/blog/shopify-discount-not-combining/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://ordermax.io/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ordermax.io/blog/"}, {"@type": "ListItem", "position": 3, "name": "Troubleshooting", "item": "https://ordermax.io/blog/shopify-discount-not-combining/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why won't my two Shopify discounts combine?", "acceptedAnswer": {"@type": "Answer", "text": "Because combination is off by default and must be enabled on both discounts. Shopify splits discounts into product, order, and shipping classes, and each discount separately specifies which other classes it may combine with. Enabling it on one side is not enough."}}, {"@type": "Question", "name": "Can two product discounts stack on Shopify?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no. Same-class stacking is restricted, which is why a sitewide percentage off and a Buy X Get Y usually will not apply together. If you need that effect, make one offer deeper rather than trying to run both."}}, {"@type": "Question", "name": "Do discount codes override automatic discounts?", "acceptedAnswer": {"@type": "Answer", "text": "No. A customer-entered code is subject to the same class and combination rules as an automatic discount. It has no special precedence."}}, {"@type": "Question", "name": "Can free shipping combine with a percentage-off code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — they are different classes, so a shipping discount and an order discount is a supported combination, provided both have the other's class enabled in their settings."}}, {"@type": "Question", "name": "Why did my gift threshold stop working when I launched a sale?", "acceptedAnswer": {"@type": "Answer", "text": "Because an order discount lowers the subtotal, which can drop the cart below the gift's threshold. Both discounts are working correctly and are working against each other. Either raise the threshold during the sale or make the threshold read pre-discount subtotal."}}, {"@type": "Question", "name": "Should I let discounts stack at all?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. Each discount was priced as if it were the only one running, stacking dilutes shopper attention, and it makes per-offer reporting meaningless. Explicit precedence — one offer per cart — is the more profitable pattern."}}, {"@type": "Question", "name": "Is there a limit on active discounts?", "acceptedAnswer": {"@type": "Answer", "text": "Shopify limits how many automatic discounts can be active simultaneously. Old automatic discounts left active consume that allowance, so a newly scheduled discount can silently fail to be active."}}]}]}
+</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F4F2FF;color:#140E2B;font-family:'Switzer',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#5B3DF5;text-decoration:none}
+a:hover{color:#3A22C4}
+::selection{background:#5B3DF5;color:#fff}
+.om-doc p{margin:0 0 16px;font-size:16.5px;line-height:1.75;color:#342C52;text-wrap:pretty}
+.om-doc h2{margin:0 0 16px;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em}
+.om-doc h3{margin:36px 0 10px;font:700 20px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em}
+.om-doc ul{margin:0 0 16px;padding-left:22px;color:#342C52;font-size:16.5px;line-height:1.75}
+.om-doc li{margin:0 0 8px}
+.om-doc table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:15px}
+.om-doc th,.om-doc td{border:1px solid #E4E0F7;padding:11px 13px;text-align:left;vertical-align:top;line-height:1.6}
+.om-doc th{background:#FAF9FF;font:600 14px 'Switzer',sans-serif;color:#140E2B}
+.om-doc td{color:#534B73}
+.om-step{display:flex;gap:16px;align-items:flex-start}
+.om-step span{flex:none;width:34px;height:34px;border-radius:99px;background:#F0EDFD;color:#4A2DE8;display:flex;align-items:center;justify-content:center;font:800 14px 'Cabinet Grotesk',sans-serif}
+.om-faq{border:1px solid #E4E0F7;border-radius:15px;padding:6px 24px;background:#FAF9FF}
+.om-faq summary{padding:16px 0;font:600 16.5px 'Switzer',sans-serif;cursor:pointer}
+.om-faq p{margin:0 0 18px;font-size:15px;line-height:1.7;color:#534B73}
+.om-card{display:block;border:1px solid #E4E0F7;border-radius:16px;padding:22px 24px;background:#fff;color:#140E2B}
+.om-card:hover{border-color:#5B3DF5;color:#140E2B}
+.om-card strong{display:block;font:700 17.5px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em;margin-bottom:7px}
+.om-card span{display:block;font-size:14.5px;line-height:1.6;color:#534B73}
+.om-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+@media (max-width:860px){ .om-nav-links{display:none !important} }
+@media (max-width:560px){ .om-nav-cta-outline{display:none !important} }
+</style>
+</head>
+<body>
+
+<header style="position:sticky;top:0;z-index:60;background:rgba(244,242,255,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #E4E0F7">
+  <div style="max-width:1200px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:28px">
+    <a href="/" style="display:flex;align-items:center;gap:10px;color:#140E2B">
+      <img src="/images/logo.png" alt="NUO AI logo" width="30" height="30" style="width:30px;height:30px;border-radius:9px">
+      <span style="font:800 18px 'Cabinet Grotesk',sans-serif;letter-spacing:-.02em">NUO AI</span>
+    </a>
+    <nav class="om-nav-links" style="display:flex;gap:26px;margin-left:auto;font-size:14.5px;font-weight:500" aria-label="Primary">
+      <a href="/features/" style="color:#534B73">Features</a>
+      <a href="/offers/" style="color:#534B73">Offers &amp; promotions</a>
+      <a href="/blog/" style="color:#534B73">Blog</a>
+      <a href="/compare/" style="color:#534B73">Compare</a>
+    </nav>
+    <div style="display:flex;gap:10px;margin-left:auto">
+      <a class="om-nav-cta-outline" href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="display:inline-block;padding:10px 18px;border-radius:10px;border:1px solid #CFC8EE;color:#140E2B;font:600 14px 'Switzer',sans-serif;background:transparent">Book a call</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_combinefix_nav" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;background:#5B3DF5;color:#fff;font:600 14px 'Switzer',sans-serif;box-shadow:0 2px 6px rgba(91,61,245,.28)">Add app — Free</a>
+    </div>
+  </div>
+</header>
+
+<section style="border-bottom:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:84px 28px 56px;display:flex;flex-direction:column;gap:18px">
+    <nav style="font-size:13.5px;color:#534B73" aria-label="Breadcrumb"><a href="/" style="color:#534B73">Home</a> <span style="color:#A7A0CC">/</span> <a href="/blog/" style="color:#534B73">Blog</a></nav>
+    <span style="font:700 12px 'Cabinet Grotesk',sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#5B3DF5">Troubleshooting</span>
+    <h1 style="margin:0;font:800 clamp(34px,5.2vw,56px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.035em;text-wrap:balance">Two discounts, one cart, and only one applied.</h1>
+    <p style="margin:0;max-width:660px;font-size:17.5px;line-height:1.65;color:#534B73;text-wrap:pretty">
+      Shopify does allow discounts to combine, but only within a specific structure, and only when each discount has been explicitly told to. The defaults are off. Once you know the three classes and where the settings live, almost every stacking problem resolves in a couple of minutes.
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_combinefix_hero" style="display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16px 'Switzer',sans-serif;box-shadow:0 4px 14px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="/offers/discount-stacking/" style="display:inline-block;padding:16px 24px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16px 'Switzer',sans-serif;background:#fff">Full discount stacking guide</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The structure in four points</h2>
+    <div style="display:flex;flex-direction:column;gap:22px;margin-top:24px">
+      <div class="om-step"><span>1</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">There are three discount classes.</strong> Product, order, and shipping. Combination is governed class by class, not discount by discount.</p></div>
+      <div class="om-step"><span>2</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Each discount carries its own settings.</strong> On every discount you create, you choose which other classes it may combine with. A new discount does not inherit last time's choices.</p></div>
+      <div class="om-step"><span>3</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Both sides must agree.</strong> If discount A permits order discounts but discount B does not permit product discounts, they do not combine. Check both, not one.</p></div>
+      <div class="om-step"><span>4</span><p style="margin:0"><strong style="color:#140E2B;font-weight:600">Same-class stacking is restricted.</strong> Two product discounts generally do not stack with each other. If you need that effect, you are usually looking for one deeper discount rather than two.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>The three classes, and what belongs in each</h2>
+    <p><strong>Product discounts</strong> act on specific items: a percentage or amount off selected products or collections, and Buy X Get Y. Most promotional mechanics are product discounts, which is why so many of them conflict with each other.</p>
+    <p><strong>Order discounts</strong> act on the cart subtotal: a percentage or amount off the whole order, usually with a minimum spend. Sitewide sale codes are typically order discounts.</p>
+    <p><strong>Shipping discounts</strong> act on shipping cost: free shipping, or a discount on rates, often with a minimum.</p>
+    <p>The practical consequence: a free-shipping discount combining with a sitewide 15% order discount is a normal, supported configuration. A Buy X Get Y combining with a 20%-off-everything product discount is the case Shopify is restrictive about, because both are product discounts competing over the same lines.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Where merchants get stuck</h2>
+    <ul>
+      <li><strong>Only checking one of the two discounts.</strong> Combination is a mutual agreement. Both discounts need the other's class enabled, and it is easy to set it on the new discount and forget the old one.</li>
+      <li><strong>Assuming codes beat automatic discounts.</strong> A customer-entered code is not privileged. It is subject to the same class and combination rules.</li>
+      <li><strong>Expecting two product discounts to stack.</strong> This is the most common disappointment. If you want 20% off plus a BOGO on the same items, Shopify is not the obstacle to work around — the offer design is. Pick one mechanic and make it deeper.</li>
+      <li><strong>Forgetting the threshold interaction.</strong> An order discount lowers the subtotal, which can drop the cart below a gift or free-shipping threshold. The two discounts are both working and they are fighting each other.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>Why you probably should not stack anyway</h2>
+    <p>Even where Shopify permits it, stacking is usually a margin mistake. Each discount was priced as though it were the only one running. A cart that collects a 20% volume tier and a 15% code is a 32% cart, and that number was nobody's plan.</p>
+    <p>There is a clarity cost too. Three offers in a cart drawer is not three times the persuasion — attention is fixed, so each additional offer dilutes the others and pushes the checkout button further down the screen. Single-offer carts routinely outperform multi-offer carts on acceptance.</p>
+    <p>And stacking destroys attribution. If several offers can fire on one cart, no offer's numbers mean anything, so you cannot decide what to keep. The better pattern is explicit precedence: decide which offer wins for which cart, and let exactly one fire. <a href="/features/offer-priority-rules/">Offer priority rules</a> do that, and they sit above Shopify's combination settings rather than replacing them.</p>
+  </div>
+</section>
+
+<section style="background:#fff;border-bottom:1px solid #E4E0F7">
+  <div class="om-doc" style="max-width:760px;margin:0 auto;padding:80px 28px">
+    <h2>A working checklist</h2>
+    <ol>
+      <li>List every active discount and note its class — product, order, or shipping.</li>
+      <li>For the pair you want combining, open both and enable the other's class on each.</li>
+      <li>If they are the same class, stop. Redesign the offer instead of fighting the platform.</li>
+      <li>Check minimum requirements. An order discount can push a cart below another discount's minimum.</li>
+      <li>Test in a fresh incognito session, logged out, through to the checkout page — not just the cart.</li>
+      <li>Count your active automatic discounts. Shopify limits how many can be active at once, and old ones you forgot about consume that allowance.</li>
+      <li>Decide what you actually want to combine, and set a priority rule so the rest cannot.</li>
+    </ol>
+  </div>
+</section>
+
+<section style="background:#fff;border-top:1px solid #E4E0F7">
+  <div style="max-width:840px;margin:0 auto;padding:80px 28px;display:flex;flex-direction:column;gap:32px">
+    <h2 style="margin:0;font:800 clamp(26px,3vw,36px)/1.15 'Cabinet Grotesk',sans-serif;letter-spacing:-.025em">Frequently asked questions</h2>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <details class="om-faq"><summary>Why won't my two Shopify discounts combine?</summary><p>Because combination is off by default and must be enabled on both discounts. Shopify splits discounts into product, order, and shipping classes, and each discount separately specifies which other classes it may combine with. Enabling it on one side is not enough.</p></details>
+      <details class="om-faq"><summary>Can two product discounts stack on Shopify?</summary><p>Generally no. Same-class stacking is restricted, which is why a sitewide percentage off and a Buy X Get Y usually will not apply together. If you need that effect, make one offer deeper rather than trying to run both.</p></details>
+      <details class="om-faq"><summary>Do discount codes override automatic discounts?</summary><p>No. A customer-entered code is subject to the same class and combination rules as an automatic discount. It has no special precedence.</p></details>
+      <details class="om-faq"><summary>Can free shipping combine with a percentage-off code?</summary><p>Yes — they are different classes, so a shipping discount and an order discount is a supported combination, provided both have the other's class enabled in their settings.</p></details>
+      <details class="om-faq"><summary>Why did my gift threshold stop working when I launched a sale?</summary><p>Because an order discount lowers the subtotal, which can drop the cart below the gift's threshold. Both discounts are working correctly and are working against each other. Either raise the threshold during the sale or make the threshold read pre-discount subtotal.</p></details>
+      <details class="om-faq"><summary>Should I let discounts stack at all?</summary><p>Usually not. Each discount was priced as if it were the only one running, stacking dilutes shopper attention, and it makes per-offer reporting meaningless. Explicit precedence — one offer per cart — is the more profitable pattern.</p></details>
+      <details class="om-faq"><summary>Is there a limit on active discounts?</summary><p>Shopify limits how many automatic discounts can be active simultaneously. Old automatic discounts left active consume that allowance, so a newly scheduled discount can silently fail to be active.</p></details>
+    </div>
+  </div>
+</section>
+
+<section style="background:#F0EDFD;border-top:1px solid #DCD6FB">
+  <div style="max-width:760px;margin:0 auto;padding:96px 28px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 style="margin:0;font:800 clamp(30px,4.2vw,50px)/1.05 'Cabinet Grotesk',sans-serif;letter-spacing:-.03em">Run one offer per cart, on purpose.</h2>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" data-cta="add_app_combinefix_footer" style="display:inline-flex;align-items:center;gap:10px;padding:17px 28px;border-radius:12px;background:#5B3DF5;color:#fff;font:600 16.5px 'Switzer',sans-serif;box-shadow:0 6px 18px rgba(91,61,245,.3)">Add app on Shopify — Free</a>
+      <a href="https://morae-labs.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiHW1vcmFlLWxhYnMubXlzaG9waWZ5LmNvbQY7AEZJIghleHAGOwBUSSIdMjAyNi0wOC0wNlQxODozMzo0Mi41NDlaBjsAVEkiCHB1cgY7AFRJIh5wZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzBjsARg%3D%3D--745664ffabb3c116b79e7ea716a7baf4051162d2" target="_blank" rel="noopener" data-cta="add_app_combinefix_footer_alt" style="display:inline-block;padding:17px 26px;border-radius:12px;border:1px solid #CFC8EE;color:#140E2B;font:600 16.5px 'Switzer',sans-serif;background:#fff">See the live demo store</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#140E2B;color:#A7A0CC">
+  <div style="max-width:1200px;margin:0 auto;padding:36px 28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:13.5px">
+    <span style="display:flex;align-items:center;gap:9px">
+      <img src="/images/logo.png" alt="NUO AI logo" width="23" height="23" style="width:23px;height:23px;border-radius:7px">
+      <strong style="font:800 15px 'Cabinet Grotesk',sans-serif;color:#F4F2FF">NUO AI</strong>
+    </span>
+    <span>© 2026 NUO AI · Manhattan, New York, NY</span>
+    <nav style="display:flex;gap:18px;margin-left:auto" aria-label="Footer">
+      <a href="/" style="color:#CFC8EE">Home</a>
+      <a href="/features/" style="color:#CFC8EE">Features</a>
+      <a href="/offers/" style="color:#CFC8EE">Offers</a>
+      <a href="/blog/" style="color:#CFC8EE">Blog</a>
+      <a href="/free-upsell-app-shopify/" style="color:#CFC8EE">Free upsell app</a>
+      <a href="https://apps.shopify.com/ordermax-1" target="_blank" rel="noopener" style="color:#CFC8EE">Shopify App Store</a>
+      <a href="https://cal.com/chloe.parker/15min" target="_blank" rel="noopener" style="color:#CFC8EE">Book a call</a>
+      <a href="/privacy-policy" style="color:#CFC8EE">Privacy policy</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
