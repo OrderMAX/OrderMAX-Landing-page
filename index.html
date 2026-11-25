@@ -31,7 +31,7 @@ window.omTrack = function(name, params){ try{ gtag('event', name, params||{}); }
 o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
 o.onload=function(){window.trackingFunctions.onLoad({appId:"6a10221dfa3de0001c4261ab"})},
 document.head.appendChild(o)}initApollo();</script>
-<script>fetch('https://server.ordermax.io/api/marketing/landing-page-visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:location.pathname,referrer:document.referrer||null,title:document.title}),keepalive:true}).catch(function(){});</script>
+<script>(function(){var u=new URLSearchParams(location.search);fetch('https://server.ordermax.io/api/marketing/landing-page-visit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({path:location.pathname,referrer:document.referrer||null,title:document.title,utm_source:u.get('utm_source'),utm_medium:u.get('utm_medium'),utm_campaign:u.get('utm_campaign'),utm_content:u.get('utm_content'),utm_term:u.get('utm_term'),lang:navigator.language||null,tz:Intl.DateTimeFormat().resolvedOptions().timeZone||null,screen:screen.width+'x'+screen.height}),keepalive:true}).catch(function(){});})();</script>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e3c2a74d-21a6-49e4-90e1-2a01c754f17e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"NUO AI","operatingSystem":"Web","applicationCategory":"BusinessApplication","description":"NUO AI is a Shopify upsell and cross-sell app that helps merchants increase cart value with adaptive storefront widgets, campaign analytics, offer-funnel insights, and automated A/B testing.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","ratingCount":"1"},"url":"https://apps.shopify.com/ordermax-1"}
@@ -61,11 +61,12 @@ input[type=range]{accent-color:#5B3DF5}
 ::selection{background:#5B3DF5;color:#fff}
 @keyframes om-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes om-pulse{0%,100%{opacity:1}50%{opacity:.35}}
-@keyframes om-demo-ring{0%{box-shadow:0 0 0 0 rgba(91,61,245,.45)}100%{box-shadow:0 0 0 16px rgba(91,61,245,0)}}
 button{font-family:inherit}
-#om-demo-float{position:fixed;right:22px;bottom:22px;z-index:9998;display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;background:#5B3DF5;color:#fff;font:600 15px 'Switzer',sans-serif;box-shadow:0 6px 20px rgba(91,61,245,.4);animation:om-demo-ring 1.8s ease-out infinite}
+#om-demo-float{position:fixed;right:100px;bottom:22px;z-index:9998;display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;background:#5B3DF5;color:#fff;font:600 15px 'Switzer',sans-serif;box-shadow:0 6px 20px rgba(91,61,245,.4)}
 #om-demo-float:hover{background:#4A2DE8;color:#fff}
 #om-demo-float .om-demo-dot{width:8px;height:8px;border-radius:50%;background:#B8F5C9;animation:om-pulse 1.4s ease-in-out infinite}
+@keyframes om-crisp-ring{0%{box-shadow:0 0 0 0 rgba(168,50,220,.5)}100%{box-shadow:0 0 0 18px rgba(168,50,220,0)}}
+#crisp-chatbox [aria-label="Open chat"]{animation:om-crisp-ring 2s ease-out infinite}
 @media (max-width:560px){#om-demo-float{display:none}}
 @media (max-width:860px){
   .om-grid-2,.om-grid-2b{grid-template-columns:1fr !important;gap:40px !important}
