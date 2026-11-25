@@ -7,7 +7,7 @@
 - Category: Shopify app — cart upsell, cross-sell, and promotions
 - Price: Free — every feature included. No paid tier, no order cap, no revenue share.
 - Rating: 5.0 on the Shopify App Store
-- Shopify App Store listing: https://apps.shopify.com/ordermax-1
+- Shopify App Store listing: https://apps.shopify.com/nuo-free-gift-with-purchase
 - Company: Manhattan, New York, NY, United States
 - Core capabilities: adaptive storefront widgets (auto-match store theme), gift-with-purchase and BOGO/Buy X Get Y campaigns, AI product recommendations, real-time offer-funnel analytics, automated A/B testing, Shopify Sidekick integration for conversational campaign management
 
